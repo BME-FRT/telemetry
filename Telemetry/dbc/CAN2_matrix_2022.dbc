@@ -33,7 +33,7 @@ NS_ :
 
 BS_:
 
-BU_: RES EPOS Dashboard Datalogger_2D Datalogger Brightloop TCU SSG Xavier MCU HV_ECU
+BU_: RES EPOS Dashboard Datalogger_2D Datalogger Brightloop TCU SSG Xavier MCU HV_ECU SECU DCDC
 
 
 BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
@@ -137,7 +137,7 @@ BO_ 648 AMK3_Actual_Values_1: 8 Vector__XXX
  SG_ AMK3_magnetizing_current : 48|16@1- (0.008778889272,0) [0|0] "" Vector__XXX
  SG_ AMK3_actual_velocity : 16|16@1- (1,0) [-5000|30000] "1/min" Vector__XXX
 
-BO_ 528 HV_Cell_Values: 5 Vector__XXX
+BO_ 528 HV_Cell_Values: 8 Vector__XXX
  SG_ HV_Cell_Voltage : 8|16@1+ (0.1,0) [0|0] "V" Vector__XXX
  SG_ HV_Cell_Temperature : 24|16@1+ (0.1,0) [0|0] "" Vector__XXX
  SG_ HV_Cell_ID : 0|8@1+ (1,0) [0|255] "" Vector__XXX
@@ -174,7 +174,7 @@ BO_ 532 HV_Battery_Status: 8 Vector__XXX
  SG_ HV_Voltage_After_AIRs : 16|16@1+ (0.1,0) [0|6553.5] "V" Vector__XXX
  SG_ HV_Current : 32|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
 
-BO_ 1378 Dashboard_Status: 3 Vector__XXX
+BO_ 1378 Dashboard_Status: 8 Vector__XXX
  SG_ Dashboarrd_heartbeat : 0|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ Dashboard_ID : 8|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ Dash_XLAT : 23|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -184,13 +184,97 @@ BO_ 1378 Dashboard_Status: 3 Vector__XXX
  SG_ Button_ON : 19|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ Button_OFF : 18|1@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 787 HV_Critical_Cell_Values: 5 Vector__XXX
+BO_ 787 HV_Critical_Cell_Values: 8 Vector__XXX
  SG_ HV_Cell_Voltage_MIN : 8|16@1+ (0.1,0) [0|6553.5] "" Vector__XXX
  SG_ HV_Cell_Temp_MAX : 24|16@1+ (0.1,0) [0|6553.5] "" Vector__XXX
  SG_ Critical_cell_values_heartbeat : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 401 RES_PDO: 8 Vector__XXX
  SG_ RES_GO_Signal : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 917 NDCDCValueOutput2: 8 DCDC
+ SG_ IDCDCOutput2Max : 43|10@1+ (0.5,-200) [-200|311.5] "A"  SECU
+ SG_ IDCDCOutput2Min : 33|10@1+ (0.5,-200) [-200|311.5] "A"  SECU
+ SG_ IDCDCOutput2Average : 53|10@1+ (0.5,-200) [-200|311.5] "A"  SECU
+ SG_ VDCDCOutput2Average : 22|11@1+ (0.0305884296,0) [0|62.6145153912] "V"  SECU
+ SG_ VDCDCOutput2Max : 11|11@1+ (0.0305884296,0) [0|62.6145153912] "V"  SECU
+ SG_ VDCDCOutput2Min : 0|11@1+ (0.0305884296,0) [0|62.6145153912] "V"  SECU
+
+BO_ 916 NDCDCValueOutput1: 8 DCDC
+ SG_ IDCDCOutput1Max : 43|10@1+ (0.5,-200) [-200|311.5] "A"  SECU
+ SG_ IDCDCOutput1Min : 33|10@1+ (0.5,-200) [-200|311.5] "A"  SECU
+ SG_ IDCDCOutput1Average : 53|10@1+ (0.5,-200) [-200|311.5] "A"  SECU
+ SG_ VDCDCOutput1Average : 22|11@1+ (0.0305884296,0) [0|62.6145153912] "V"  SECU
+ SG_ VDCDCOutput1Max : 11|11@1+ (0.0305884296,0) [0|62.6145153912] "V"  SECU
+ SG_ VDCDCOutput1Min : 0|11@1+ (0.0305884296,0) [0|62.6145153912] "V"  SECU
+
+BO_ 915 NDCDCValue: 8 DCDC
+ SG_ BDCDCFlashSubzoneError m5 : 63|1@1+ (1,0) [0|1] ""  SECU
+ SG_ NDCDCXcpFaults m8 : 32|16@1+ (1,0) [0|0] ""  SECU
+ SG_ NDCDCRcpWarning m5 : 62|1@1+ (1,0) [0|0] ""  SECU
+ SG_ IDCDCHVInAverage m8 : 48|12@1+ (0.0125,-25) [-25|26.1875] "A"  SECU
+ SG_ NDCDCSerial m7 : 32|32@1+ (1,0) [0|4294967295] ""  SECU
+ SG_ NDCDCBootloaderId m6 : 48|16@1+ (1,0) [0|65535] ""  SECU
+ SG_ NDCDCApplicationId m6 : 32|16@1+ (1,0) [0|65535] ""  SECU
+ SG_ NDCDCChecksum m5 : 32|16@1+ (1,0) [0|65535] ""  SECU
+ SG_ NDCDCOutputOverload2Count m4 : 40|8@1+ (1,0) [0|255] ""  SECU
+ SG_ NDCDCOutputOverload1Count m4 : 32|8@1+ (1,0) [0|255] ""  SECU
+ SG_ TDCDCBB3Measured m3 : 48|8@1+ (1,-40) [-40|215] "°C"  SECU
+ SG_ TDCDCBB2Measured m3 : 40|8@1+ (1,-40) [-40|215] "°C"  SECU
+ SG_ TDCDCBB1Measured m3 : 32|8@1+ (1,-40) [-40|215] "°C"  SECU
+ SG_ TDCDCSR2Measured m2 : 48|8@1+ (1,-40) [-40|215] "°C"  SECU
+ SG_ TDCDCSR1Measured m2 : 40|8@1+ (1,-40) [-40|215] "°C"  SECU
+ SG_ IDCDCOutput1UnBalance m1 : 48|8@1+ (0.25,0) [0|63.75] "A"  SECU
+ SG_ VDCDCAux5Measured m1 : 40|8@1+ (0.01289377,0) [0|3.28791135] "V"  SECU
+ SG_ VDCDCAux4Measured m1 : 32|8@1+ (0.0386813,0) [0|9.8637315] "V"  SECU
+ SG_ VDCDCAux3Measured m0 : 56|8@1+ (0.015472526,0) [0|3.94549413] "V"  SECU
+ SG_ VDCDCAux2Measured m0 : 48|8@1+ (0.0386813,0) [0|9.8637315] "V"  SECU
+ SG_ VDCDCAux1Measured m0 : 40|8@1+ (0.07723368,0) [0|19.6945884] "V"  SECU
+ SG_ VDCDCHVInAverage m0 : 32|8@1+ (4.894148739,0) [0|1248.007928445] "V"  SECU
+ SG_ Multiplexer M : 27|5@1+ (1,0) [0|31] ""  SECU
+ SG_ VDCDCLVInAverage : 18|9@1+ (0.1223537,0) [0|62.5227407] "V"  SECU
+ SG_ VDCDCLVInMax : 9|9@1+ (0.1223537,0) [0|62.5227407] "V"  SECU
+ SG_ VDCDCLVInMin : 0|9@1+ (0.1223537,0) [0|62.5227407] "V"  SECU
+
+BO_ 914 NDCDCStatus: 8 DCDC
+ SG_ BDCDCRegenerationDemanded : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BDCDCUmbilicalDemanded : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BDCDCSR2OtpError : 29|1@1+ (1,0) [0|1] ""  SECU
+ SG_ BDCDCSR1OtpError : 28|1@1+ (1,0) [0|1] ""  SECU
+ SG_ BDCDCBB3OtpError : 26|1@1+ (1,0) [0|1] ""  SECU
+ SG_ BDCDCBB2OtpError : 25|1@1+ (1,0) [0|1] ""  SECU
+ SG_ BDCDCBB1OtpError : 24|1@1+ (1,0) [0|1] ""  SECU
+ SG_ BDCDCOutput2Warning : 17|1@1+ (1,0) [0|1] ""  SECU
+ SG_ BDCDCOutput2OvpError : 16|1@1+ (1,0) [0|1] ""  SECU
+ SG_ BDCDCOutput2Demanded : 15|1@1+ (1,0) [0|1] ""  SECU
+ SG_ BDCDCOutput1Warning : 14|1@1+ (1,0) [0|1] ""  SECU
+ SG_ BDCDCOutput1OvpError : 13|1@1+ (1,0) [0|1] ""  SECU
+ SG_ BDCDCOutput1Demanded : 12|1@1+ (1,0) [0|1] ""  SECU
+ SG_ BDCDCHVOcpError : 11|1@1+ (1,0) [0|1] ""  SECU
+ SG_ BDCDCHVError : 10|1@1+ (1,0) [0|1] ""  SECU
+ SG_ BDCDCLVUvpAlimAuxError : 9|1@1+ (1,0) [0|1] ""  SECU
+ SG_ BDCDCLVUvpInError : 8|1@1+ (1,0) [0|1] ""  SECU
+ SG_ BDCDCLVOvpInError : 7|1@1+ (1,0) [0|1] ""  SECU
+ SG_ BDCDCAuxIsoEnabled : 6|1@1+ (1,0) [0|1] ""  SECU
+ SG_ BDCDCCANError : 5|1@1+ (1,0) [0|1] ""  SECU
+ SG_ BDCDCWakeUp : 4|1@1+ (1,0) [0|1] ""  SECU
+ SG_ NDCDCState : 0|4@1+ (1,0) [0|15] ""  SECU
+
+BO_ 913 NDCDCSetpoints: 8 SECU
+ SG_ VDCDCHVSetpoint m9 : 8|12@1+ (0.25,0) [0|1023.75] "V"  DCDC
+ SG_ IDCDCHVLimit m9 : 20|12@1+ (0.0125,-25) [-25|26.1875] "A"  DCDC
+ SG_ VDCDCLV2Setpoint m2 : 8|12@1+ (0.0152942148,0) [0|62.629809606] "V"  DCDC
+ SG_ VDCDCLV1Setpoint m1 : 8|12@1+ (0.0152942148,0) [0|62.629809606] "V"  DCDC
+ SG_ IDCDCLV2Limit m2 : 20|12@1+ (0.25,-500) [-500|523.75] "A"  DCDC
+ SG_ IDCDCLV1Limit m1 : 20|12@1+ (0.25,-500) [-500|523.75] "A"  DCDC
+ SG_ NDCDCMultiplexer M : 0|8@1+ (1,0) [0|255] ""  DCDC
+
+BO_ 912 NDCDCControl: 8 SECU
+ SG_ BDCDCRegenerationOn : 17|1@1+ (1,0) [0|1] ""  DCDC
+ SG_ BDCDCUmbilicalOn : 16|1@1+ (1,0) [0|1] ""  DCDC
+ SG_ BDCDCOutput2Requested : 9|1@1+ (1,0) [0|1] ""  DCDC
+ SG_ BDCDCOutput1Requested : 8|1@1+ (1,0) [0|1] ""  DCDC
+ SG_ NPDBCounter : 0|8@1+ (1,0) [0|255] ""  DCDC
 
 
 
