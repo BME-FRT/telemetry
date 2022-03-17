@@ -110,7 +110,11 @@
 				<Item Name="XNET Start.vi" Type="VI" URL="/&lt;vilib&gt;/xnet/xnet.llb/XNET Start.vi"/>
 				<Item Name="xobjhandle.ctl" Type="VI" URL="/&lt;vilib&gt;/nican/nican.llb/xobjhandle.ctl"/>
 			</Item>
+			<Item Name="4led_driver.vi" Type="VI" URL="../SubVI/4led_driver.vi"/>
+			<Item Name="as_state_driver.vi" Type="VI" URL="../SubVI/as_state_driver.vi"/>
+			<Item Name="assi_state_driver.vi" Type="VI" URL="../SubVI/assi_state_driver.vi"/>
 			<Item Name="bytearray2frame.vi" Type="VI" URL="../SubVI/bytearray2frame.vi"/>
+			<Item Name="car_state_driver.vi" Type="VI" URL="../SubVI/car_state_driver.vi"/>
 			<Item Name="conversion_init.vi" Type="VI" URL="../SubVI/conversion_init.vi"/>
 			<Item Name="conversion_loop.vi" Type="VI" URL="../SubVI/conversion_loop.vi"/>
 			<Item Name="get_signal_list.vi" Type="VI" URL="../SubVI/get_signal_list.vi"/>
@@ -129,6 +133,8 @@
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>
 			<Item Name="ReadUDP.vi" Type="VI" URL="../SubVI/ReadUDP.vi"/>
+			<Item Name="sc_decode.vi" Type="VI" URL="../SubVI/sc_decode.vi"/>
+			<Item Name="sc_store.vi" Type="VI" URL="../SubVI/sc_store.vi"/>
 			<Item Name="xnet_init.vi" Type="VI" URL="../SubVI/xnet_init.vi"/>
 		</Item>
 		<Item Name="Build Specifications" Type="Build">
@@ -147,7 +153,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{D0569CA3-EAD2-413B-A09F-FD04BC904ED7}</Property>
-				<Property Name="Bld_version.build" Type="Int">6</Property>
+				<Property Name="Bld_version.build" Type="Int">7</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Telemetry2022.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME.exe</Property>
@@ -156,7 +162,7 @@
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{A0DAC9E5-F497-4FD9-A6EF-0BDCEB8A8447}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{540E3D41-2F4E-49B0-8825-3CC6B31922CE}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Telemetry2022.vi</Property>
