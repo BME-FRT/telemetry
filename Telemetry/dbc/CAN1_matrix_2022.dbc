@@ -152,24 +152,24 @@ BO_ 389 MCU1_Setpoints: 8 Vector__XXX
  SG_ AMK1_Enable : 10|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ AMK1_DC_On : 9|1@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 1153 TCU_Status2: 8 Vector__XXX
+BO_ 1153 TCU_Status2: 8 TCU
  SG_ VDC_Yaw_Control_Weight_Selector : 22|2@1+ (1,0) [0|3] "" Vector__XXX
  SG_ VDC_Yaw_Control_Balance : 16|6@1+ (0.02,0) [0|1.26] "" Vector__XXX
- SG_ VDC_Throttle_Bias : 56|8@1- (0.025,8) [4.8|11.175] "" Vector__XXX
- SG_ VDC_TC_Normalizer : 40|4@1+ (5,0) [0|0] "" Vector__XXX
+ SG_ VDC_Lateral_Balance : 56|8@1+ (0.02,0) [0|5.1] "" Vector__XXX
+ SG_ VDC_Throttle_Bias : 40|4@1+ (0.025,0.2) [0.2|0.575] "" Vector__XXX
  SG_ VDC_Rear_Reduction : 44|4@1+ (-0.02,1) [0.7|1] "" Vector__XXX
  SG_ VDC_Powlim_Approx : 32|8@1+ (1000,0) [0|255000] "" Vector__XXX
- SG_ VDC_M_Yaw_Limit : 0|4@1+ (100,0) [0|15] "" Vector__XXX
+ SG_ VDC_M_Yaw_Limit : 0|4@1+ (100,0) [0|1500] "" Vector__XXX
  SG_ VDC_M_Yaw : 8|8@1+ (20,-2560) [-2560|2540] "" Vector__XXX
- SG_ VDC_Drop_Parameter_New : 48|8@1- (0.005,0) [0|0] "" Vector__XXX
- SG_ VDC_Brake_Force_Threshold : 24|8@1- (5,0) [0|0] "" Vector__XXX
- SG_ VDC_Brake_Force_Max : 4|4@1+ (100,0) [0|15] "" Vector__XXX
+ SG_ VDC_Drop_Parameter_New : 48|8@1+ (0.005,0) [0|1.275] "" Vector__XXX
+ SG_ VDC_Brake_Force_Threshold : 24|8@1+ (5,0) [0|1275] "" Vector__XXX
+ SG_ VDC_Brake_Force_Max : 4|4@1+ (100,0) [0|1500] "" Vector__XXX
 
-BO_ 1157 TCU_Status3: 8 Vector__XXX
+BO_ 1157 TCU_Status3: 8 TCU
  SG_ VDC_v_x : 0|8@1+ (0.2,0) [0|51] "" Vector__XXX
- SG_ VDC_Torque_Demand : 8|8@1+ (0.658,-128) [-128|39.79] "" Vector__XXX
- SG_ VDC_Regbrake_Rear : 24|8@1+ (0.082,0) [0|20.91] "" Vector__XXX
- SG_ VDC_Regbrake_Front : 16|8@1+ (0.082,0) [0|20.91] "" Vector__XXX
+ SG_ VDC_Torque_Demand : 8|8@1+ (0.65882,-84.3294) [-84.3294|83.6697] "" Vector__XXX
+ SG_ VDC_Regbrake_Rear : 24|8@1+ (-0.0823,0) [-20.9865|0] "" Vector__XXX
+ SG_ VDC_Regbrake_Front : 16|8@1+ (-0.0823,0) [-20.9865|0] "" Vector__XXX
  SG_ VDC_Fz_RR : 56|8@1+ (10,0) [0|2550] "" Vector__XXX
  SG_ VDC_Fz_RL : 48|8@1+ (10,0) [0|2550] "" Vector__XXX
  SG_ VDC_Fz_FR : 40|8@1+ (10,0) [0|2550] "" Vector__XXX
@@ -320,9 +320,18 @@ BA_ "NodeLayerModules" BU_ Steering "CANoeILNLVector.dll";
 BA_ "NodeLayerModules" BU_ TCU "CANoeILNLVector.dll";
 BA_ "NodeLayerModules" BU_ SSG_ECU "CANoeILNLVector.dll";
 BA_ "GenMsgCycleTime" BO_ 819 100;
-BA_ "GenSigStartValue" SG_ 1153 VDC_Throttle_Bias 0;
-BA_ "GenSigStartValue" SG_ 1153 VDC_Rear_Reduction 15;
+BA_ "GenSigStartValue" SG_ 1153 VDC_Yaw_Control_Weight_Selector 2;
+BA_ "GenSigStartValue" SG_ 1153 VDC_Yaw_Control_Balance 18;
+BA_ "GenSigStartValue" SG_ 1153 VDC_Lateral_Balance 50;
+BA_ "GenSigStartValue" SG_ 1153 VDC_Throttle_Bias 4;
+BA_ "GenSigStartValue" SG_ 1153 VDC_Rear_Reduction -0;
+BA_ "GenSigStartValue" SG_ 1153 VDC_Powlim_Approx 10;
+BA_ "GenSigStartValue" SG_ 1153 VDC_M_Yaw_Limit 7;
 BA_ "GenSigStartValue" SG_ 1153 VDC_M_Yaw 128;
+BA_ "GenSigStartValue" SG_ 1153 VDC_Drop_Parameter_New 32;
+BA_ "GenSigStartValue" SG_ 1153 VDC_Brake_Force_Threshold 60;
+BA_ "GenSigStartValue" SG_ 1153 VDC_Brake_Force_Max 7;
+BA_ "GenSigStartValue" SG_ 1157 VDC_Torque_Demand 128.000667860721;
 BA_ "GenSigStartValue" SG_ 105 Xavier_Target_Steering_Angle 9999990;
 BA_ "GenSigStartValue" SG_ 656 Rotary5 1;
 BA_ "GenSigStartValue" SG_ 656 Rotary4 1;
