@@ -155,7 +155,7 @@ BO_ 389 MCU1_Setpoints: 8 Vector__XXX
 BO_ 1153 TCU_Status2: 8 TCU
  SG_ VDC_Yaw_Control_Weight_Selector : 22|2@1+ (1,0) [0|3] "" Vector__XXX
  SG_ VDC_Yaw_Control_Balance : 16|6@1+ (0.02,0) [0|1.26] "" Vector__XXX
- SG_ VDC_Lateral_Balance : 56|8@1+ (0.02,0) [0|5.1] "" Vector__XXX
+ SG_ VDC_Lateral_Balance : 60|4@1+ (0.02,0.9) [0.9|1.2] "" Vector__XXX
  SG_ VDC_Throttle_Bias : 40|4@1+ (0.025,0.2) [0.2|0.575] "" Vector__XXX
  SG_ VDC_Rear_Reduction : 44|4@1+ (-0.02,1) [0.7|1] "" Vector__XXX
  SG_ VDC_Powlim_Approx : 32|8@1+ (1000,0) [0|255000] "" Vector__XXX
@@ -322,7 +322,7 @@ BA_ "NodeLayerModules" BU_ SSG_ECU "CANoeILNLVector.dll";
 BA_ "GenMsgCycleTime" BO_ 819 100;
 BA_ "GenSigStartValue" SG_ 1153 VDC_Yaw_Control_Weight_Selector 2;
 BA_ "GenSigStartValue" SG_ 1153 VDC_Yaw_Control_Balance 18;
-BA_ "GenSigStartValue" SG_ 1153 VDC_Lateral_Balance 50;
+BA_ "GenSigStartValue" SG_ 1153 VDC_Lateral_Balance 5;
 BA_ "GenSigStartValue" SG_ 1153 VDC_Throttle_Bias 4;
 BA_ "GenSigStartValue" SG_ 1153 VDC_Rear_Reduction -0;
 BA_ "GenSigStartValue" SG_ 1153 VDC_Powlim_Approx 10;

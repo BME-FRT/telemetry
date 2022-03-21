@@ -37,49 +37,62 @@ BU_: RES EPOS Dashboard Datalogger_2D Datalogger Brightloop TCU SSG Xavier MCU H
 
 
 BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
- SG_ VDC_Max_Motor_Torque : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ VDC_New_Drop_Enabled : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ VDC_BTC_Error : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Timeout_Error_PN_Heartbeat : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Timeout_Error_HV_Current : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_HV_Voltage : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_HV_Current : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_HV_Cell_Voltage : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_HV_Cell_Temp : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Timeout_Error_HV_Cell_Temp : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Timeout_Error_Rotary1 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_Button2 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_Button3 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_Button4 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_Button1 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_Rotary5 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_Rotary4 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_Rotary3 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_Rotary2 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_Rotary1 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Timeout_Error_SC_Endline : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_SC_Endline : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Timeout_Error_BPS_front : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_BPS_rear : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_BPS_front : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_BFS : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Timeout_Error_BFS : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Timeout_Error_APPS : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ TCU_heartbeat : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ Validity_Error_STA2 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_STA1 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Plausibility_Error_Steering : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_APPS2 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_APPS1 : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Plausibility_Error_APPS : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Timeout_Error_Acc_X : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Plausibility_Error_Yaw_Rate : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_Yaw_Rate : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_Acc_Y : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Validity_Error_Acc_X : 0|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ AMK4_Control : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
 
-BO_ 0 TCU_Status5: 8 TCU
+BO_ 1155 TCU_InputError1: 8 TCU
+ SG_ Timeout_Error_Rotary5 : 48|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Timeout_Error_Rotary4 : 49|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Timeout_Error_Rotary3 : 50|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Timeout_Error_Rotary2 : 51|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Timeout_Error_Rotary1 : 52|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Timeout_Error_SC_Endline : 53|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_SC_Endline : 54|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Timeout_Error_PB_Heartbeat : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Timeout_Error_HV_Current : 40|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_HV_Voltage : 41|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Timeout_Error_HV_Cell_Temp : 43|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_HV_Current : 42|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_HV_Cell_Voltage : 44|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_HV_Cell_Temp : 45|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_Button4 : 46|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_Button3 : 47|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_Button2 : 32|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_Button1 : 33|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_Rotary5 : 34|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_Rotary4 : 35|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_Rotary3 : 36|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_Rotary2 : 37|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_Rotary1 : 38|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Timeout_Error_BPS_Rear : 39|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_BFS : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Timeout_Error_APPS2 : 29|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Timeout_Error_BPS_Front : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_BPS_rear : 25|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_BPS_front : 26|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Timeout_Error_BFS : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Timeout_Error_APPS1 : 30|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_STA2 : 31|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_STA1 : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Plausibility_Error_Steering : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_APPS2 : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_APPS1 : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Plausibility_Error_APPS : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Plausibility_Error_Yaw_Rate : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Timeout_Error_AccY_Rear : 22|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Timeout_Error_AccY_Front : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Timeout_Error_AccX_Rear : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_Yaw_Rate_Rear : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_AccY_Rear : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_AccX_Rear : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Timeout_Error_AccX_Front : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_Yaw_Rate_Front : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_AccY_Front : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_AccX_Front : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ TCU_Heartbeat : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+
+BO_ 1159 TCU_Status5: 8 TCU
+ SG_ VDC_Track_Length : 8|8@1+ (10,0) [0|2550] "" Vector__XXX
+ SG_ VDC_Laps : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 1158 TCU_Status4: 8 TCU
  SG_ VDC_Target_SoC : 56|8@1+ (500,0) [0|127500] "" Vector__XXX
@@ -297,6 +310,8 @@ BO_ 912 NDCDCControl: 8 SECU
 
 
 CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
+BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 2 100000;
+BA_DEF_ BO_  "GenMsgCycleTime" INT 2 50000;
 BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 100000000000;
 BA_DEF_  "BusType" STRING ;
 BA_DEF_ BU_  "NodeLayerModules" STRING ;
@@ -305,6 +320,8 @@ BA_DEF_ BU_  "CANoeJitterMax" INT 0 0;
 BA_DEF_ BU_  "CANoeJitterMin" INT 0 0;
 BA_DEF_ BU_  "CANoeDrift" INT 0 0;
 BA_DEF_ BU_  "CANoeStartDelay" INT 0 0;
+BA_DEF_DEF_  "GenMsgCycleTimeFast" 100;
+BA_DEF_DEF_  "GenMsgCycleTime" 2;
 BA_DEF_DEF_  "GenSigStartValue" 0;
 BA_DEF_DEF_  "BusType" "";
 BA_DEF_DEF_  "NodeLayerModules" "";
@@ -313,6 +330,7 @@ BA_DEF_DEF_  "CANoeJitterMax" 0;
 BA_DEF_DEF_  "CANoeJitterMin" 0;
 BA_DEF_DEF_  "CANoeDrift" 0;
 BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_ "GenSigStartValue" SG_ 1159 VDC_Track_Length 100;
 BA_ "GenSigStartValue" SG_ 1158 VDC_Static_Weight_Distribution 5;
 BA_ "GenSigStartValue" SG_ 1158 VDC_TC_Threshold 50;
 BA_ "GenSigStartValue" SG_ 1158 VDC_Efficiency_Tune 45;
