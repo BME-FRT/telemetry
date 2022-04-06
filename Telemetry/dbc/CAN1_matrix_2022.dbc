@@ -175,7 +175,7 @@ BO_ 1157 TCU_Status3: 8 TCU
  SG_ VDC_Fz_FR : 40|8@1+ (10,0) [0|2550] "" Vector__XXX
  SG_ VDC_Fz_FL : 32|8@1+ (10,0) [0|2550] "" Vector__XXX
 
-BO_ 1409 Pedal_Node_status: 8 Vector__XXX
+BO_ 1377 Pedal_Node_status: 8 Vector__XXX
  SG_ Pedal_Node_heartbeat : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 513 Pedal_NODE_STA_BPS: 8 Vector__XXX
@@ -191,7 +191,10 @@ BO_ 512 Pedal_Node_APS_PPS: 8 Vector__XXX
  SG_ APPS1_ADC : 3|12@0+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 873 SteeringDisplay: 8 TCU
- SG_ Steering_number : 39|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Steering_letter8 : 56|8@1+ (1,0) [0|0] "char" Vector__XXX
+ SG_ Steering_letter7 : 48|8@1+ (1,0) [0|0] "char" Vector__XXX
+ SG_ Steering_letter6 : 40|8@1+ (1,0) [0|0] "char" Vector__XXX
+ SG_ Steering_letter5 : 32|8@1+ (1,0) [0|0] "char" Vector__XXX
  SG_ Steering_letter4 : 24|8@1+ (1,0) [0|0] "char" Vector__XXX
  SG_ Steering_letter3 : 16|8@1+ (1,0) [0|0] "char" Vector__XXX
  SG_ Steering_letter2 : 8|8@1+ (1,0) [0|0] "char" Vector__XXX

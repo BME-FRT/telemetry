@@ -169,41 +169,41 @@ BO_ 648 AMK3_Actual_Values_1: 8 Vector__XXX
  SG_ AMK3_actual_velocity : 16|16@1- (1,0) [-5000|30000] "1/min" Vector__XXX
 
 BO_ 528 HV_Cell_Values: 8 Vector__XXX
- SG_ HV_Cell_Voltage : 8|16@1+ (0.1,0) [0|0] "V" Vector__XXX
- SG_ HV_Cell_Temperature : 24|16@1+ (0.1,0) [0|0] "" Vector__XXX
- SG_ HV_Cell_ID : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ HV_Cell_Voltage : 15|16@0+ (1,0) [0|65535] "V" Vector__XXX
+ SG_ HV_Cell_Temperature : 31|16@0+ (0.1,0) [0|0] "" Vector__XXX
+ SG_ HV_Cell_ID : 7|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 530 HV_Accumulator_Status: 8 Vector__XXX
- SG_ HV_Cell_OT : 27|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ AIR_plus_State : 11|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ AIR_minus_state : 12|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ AMS_Status : 8|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ AMS_Relay_State : 19|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ TSAL_RED : 21|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ TSAL_GREEN : 18|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ TS_Overcurrent : 24|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ TS_Over_Voltage : 26|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ Place_of_error : 32|16@1+ (1,0) [0|255] "" Vector__XXX
- SG_ PC_State : 14|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ PC_Error : 25|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ MCU_STAMP : 23|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ IMD_Status : 9|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ IMD_Relay_State : 20|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ HV_ECU_SC_Endline_State : 13|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ HV_ECU_Heartbeat : 0|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ HV_DetStatus : 10|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ HV_Cell_UV : 29|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ HV_Cell_OV : 28|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ HV_Acc_Menu : 17|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Error_value : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ Error_STAMP_TSAL : 22|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Driver_Protection_State : 16|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ HV_Cell_OT : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AIR_plus_State : 12|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AIR_minus_state : 11|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMS_Status : 15|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMS_Relay_State : 20|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TSAL_RED : 18|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TSAL_GREEN : 21|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ TS_Overcurrent : 31|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TS_Over_Voltage : 29|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ Place_of_error : 39|16@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ PC_State : 9|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PC_Error : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ MCU_STAMP : 16|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Status : 14|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ IMD_Relay_State : 19|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HV_ECU_SC_Endline_State : 10|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HV_ECU_Heartbeat : 7|8@0+ (1,0) [0|255] "" Vector__XXX
+ SG_ HV_DetStatus : 13|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HV_Cell_UV : 26|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HV_Cell_OV : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HV_Acc_Menu : 22|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Error_value : 55|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ Error_STAMP_TSAL : 17|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ Driver_Protection_State : 23|1@0+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 532 HV_Battery_Status: 8 Vector__XXX
- SG_ State_of_Charge : 48|16@1+ (1,0) [0|65535] "mAh" Vector__XXX
- SG_ HV_Voltage_Before_AIRs : 0|16@1+ (0.1,0) [0|6553.5] "V" Vector__XXX
- SG_ HV_Voltage_After_AIRs : 16|16@1+ (0.1,0) [0|6553.5] "V" Vector__XXX
- SG_ HV_Current : 32|16@1- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
+ SG_ State_of_Charge : 55|16@0+ (1,0) [0|65535] "mAh" Vector__XXX
+ SG_ HV_Voltage_Before_AIRs : 7|16@0+ (0.1,0) [0|6553.5] "V" Vector__XXX
+ SG_ HV_Voltage_After_AIRs : 23|16@0+ (0.1,0) [0|6553.5] "V" Vector__XXX
+ SG_ HV_Current : 39|16@0- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
 
 BO_ 1378 Dashboard_Status: 8 Vector__XXX
  SG_ Dashboarrd_heartbeat : 0|8@1+ (1,0) [0|255] "" Vector__XXX
@@ -216,9 +216,9 @@ BO_ 1378 Dashboard_Status: 8 Vector__XXX
  SG_ Button_OFF : 21|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 787 HV_Critical_Cell_Values: 8 Vector__XXX
- SG_ HV_Cell_Voltage_MIN : 8|16@1+ (0.1,0) [0|6553.5] "" Vector__XXX
- SG_ HV_Cell_Temp_MAX : 24|16@1+ (0.1,0) [0|6553.5] "" Vector__XXX
- SG_ Critical_cell_values_heartbeat : 0|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ HV_Cell_Voltage_MIN : 15|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ HV_Cell_Temp_MAX : 31|16@0+ (0.1,0) [0|6553.5] "" Vector__XXX
+ SG_ Critical_cell_values_heartbeat : 7|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 401 RES_PDO: 8 Vector__XXX
  SG_ RES_GO_Signal : 1|1@1+ (1,0) [0|1] "" Vector__XXX
