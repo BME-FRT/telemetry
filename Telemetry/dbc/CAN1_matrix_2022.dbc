@@ -250,12 +250,12 @@ BO_ 644 AMK1_Actual_Values_1: 8 MCU
  SG_ AMK1_actual_velocity : 16|16@1- (1,0) [-5000|30000] "1/min" Vector__XXX
 
 BO_ 561 Brake_SC_endline: 8 SSG_ECU
- SG_ SC_ENDLINE : 48|1@1+ (1,0) [0|1] ""  TCU
- SG_ Brake_pressure_rear_validity : 51|1@1+ (1,0) [0|1] ""  TCU
- SG_ Brake_pressure_rear : 32|16@1+ (0.1,0) [0|1400] ""  TCU
- SG_ Brake_pressure_front_validity : 50|1@1+ (1,0) [0|1] ""  TCU
- SG_ Brake_pressure_front : 16|16@1+ (0.1,0) [0|1400] ""  TCU
- SG_ Brake_force_validity : 49|1@1+ (1,0) [0|1] ""  TCU
+ SG_ SC_ENDLINE : 51|5@1+ (1,0) [0|31] "V"  TCU
+ SG_ Brake_pressure_rear_validity : 50|1@1+ (1,0) [0|1] ""  TCU
+ SG_ Brake_pressure_rear : 32|16@1+ (0.1,0) [0|1400] "bar"  TCU
+ SG_ Brake_pressure_front_validity : 49|1@1+ (1,0) [0|1] ""  TCU
+ SG_ Brake_pressure_front : 16|16@1+ (0.1,0) [0|1400] "bar"  TCU
+ SG_ Brake_force_validity : 48|1@1+ (1,0) [0|1] ""  TCU
  SG_ Brake_Force_sensor : 0|16@1+ (1,0) [0|1500] "N"  TCU
 
 BO_ 560 Throttle_Steering: 8 SSG_ECU
