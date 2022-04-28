@@ -36,15 +36,17 @@ BS_:
 BU_: Datalogger_2D Xavier MCU HVECU Bosch_Accel_sensor PedalNode Steering TCU SSG_ECU
 
 
-BO_ 529 Charger_status: 8 Vector__XXX
- SG_ Charger_SC_Ready : 5|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Charger_Ready : 6|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Charger_IMD_Error : 0|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Charger_HV_Enabled : 4|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Charger_Charging_state : 8|3@1+ (1,0) [0|7] "" Vector__XXX
- SG_ Charger_Charge_Enabled : 3|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Charger_Balance_Enabled : 2|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Charger_AMS_Error : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ VDC_v_x : 0|8@1+ (0.2,0) [0|51] "" Vector__XXX
+ SG_ VDC_Regbrake_Rear : 0|8@1+ (-0.0823,0) [-20.9865|0] "" Vector__XXX
+ SG_ VDC_Regbrake_Front : 0|8@1+ (-0.0823,0) [-20.9865|0] "" Vector__XXX
+
+BO_ 617 DynamicState: 8 Vector__XXX
+ SG_ Yaw_Rate_Rear : 55|16@0+ (0.0001,-3.2768) [-3.2768|3.2767] "" Vector__XXX
+ SG_ v_y : 8|8@1+ (0.1,-12.8) [-12.8|12.7] "" Vector__XXX
+ SG_ v_x : 0|8@1+ (0.2,0) [0|51] "" Vector__XXX
+ SG_ AccY_Rear : 39|16@0+ (0.001,-32.768) [-32.768|32.767] "" Vector__XXX
+ SG_ AccX_Rear : 23|16@0+ (0.001,-32.768) [-32.768|32.767] "" Vector__XXX
 
 BO_ 820 SSG_Status2: 8 Vector__XXX
  SG_ Brake_Light : 41|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -135,8 +137,8 @@ BO_ 1029 EEPROM_Throttle: 8 Vector__XXX
  SG_ EEPROM_APPS1_MAX : 12|12@1+ (1,0) [0|4095] "" Vector__XXX
 
 BO_ 390 MCU2_Setpoints: 8 Vector__XXX
- SG_ AMK2_Torque_Limit_Positive : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ AMK2_Torque_Limit_Negative : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ AMK2_Torque_Limit_Positive : 32|16@1+ (0.0098,0) [0|22] "Nm" Vector__XXX
+ SG_ AMK2_Torque_Limit_Negative : 48|16@1+ (0.0098,0) [0|22] "Nm" Vector__XXX
  SG_ AMK2_Target_Velocity : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
  SG_ AMK2_Inverter_On : 8|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ AMK2_Error_Reset : 11|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -144,8 +146,8 @@ BO_ 390 MCU2_Setpoints: 8 Vector__XXX
  SG_ AMK2_DC_On : 9|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 389 MCU1_Setpoints: 8 Vector__XXX
- SG_ AMK1_Torque_Limit_Positive : 32|16@1+ (1,0) [0|65535] "" Vector__XXX
- SG_ AMK1_Torque_Limit_Negative : 48|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ AMK1_Torque_Limit_Positive : 32|16@1+ (0.0098,0) [0|22] "Nm" Vector__XXX
+ SG_ AMK1_Torque_Limit_Negative : 48|16@1+ (0.0098,0) [0|22] "Nm" Vector__XXX
  SG_ AMK1_Target_Velocity : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
  SG_ AMK1_Inverter_On : 8|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ AMK1_Error_Reset : 11|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -153,6 +155,8 @@ BO_ 389 MCU1_Setpoints: 8 Vector__XXX
  SG_ AMK1_DC_On : 9|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 1153 TCU_Status2: 8 TCU
+ SG_ VDC_EPOS_State : 56|2@1+ (1,0) [0|2] "" Vector__XXX
+ SG_ VDC_MCU_State : 58|2@1- (1,0) [0|2] "" Vector__XXX
  SG_ VDC_Yaw_Control_Weight_Selector : 22|2@1+ (1,0) [0|3] "" Vector__XXX
  SG_ VDC_Yaw_Control_Balance : 16|6@1+ (0.02,0) [0|1.26] "" Vector__XXX
  SG_ VDC_Lateral_Balance : 60|4@1+ (0.02,0.9) [0.9|1.2] "" Vector__XXX
@@ -166,14 +170,11 @@ BO_ 1153 TCU_Status2: 8 TCU
  SG_ VDC_Brake_Force_Max : 4|4@1+ (100,0) [0|1500] "" Vector__XXX
 
 BO_ 1157 TCU_Status3: 8 TCU
- SG_ VDC_v_x : 0|8@1+ (0.2,0) [0|51] "" Vector__XXX
- SG_ VDC_Torque_Demand : 8|8@1+ (0.65882,-84.3294) [-84.3294|83.6697] "" Vector__XXX
- SG_ VDC_Regbrake_Rear : 24|8@1+ (-0.0823,0) [-20.9865|0] "" Vector__XXX
- SG_ VDC_Regbrake_Front : 16|8@1+ (-0.0823,0) [-20.9865|0] "" Vector__XXX
- SG_ VDC_Fz_RR : 56|8@1+ (10,0) [0|2550] "" Vector__XXX
- SG_ VDC_Fz_RL : 48|8@1+ (10,0) [0|2550] "" Vector__XXX
- SG_ VDC_Fz_FR : 40|8@1+ (10,0) [0|2550] "" Vector__XXX
- SG_ VDC_Fz_FL : 32|8@1+ (10,0) [0|2550] "" Vector__XXX
+ SG_ VDC_Torque_Demand : 8|8@1+ (0.65882,-84.3294) [-84.3294|83.6697] "Nm" Vector__XXX
+ SG_ VDC_Fz_RR : 56|8@1+ (10,0) [0|2550] "N" Vector__XXX
+ SG_ VDC_Fz_RL : 48|8@1+ (10,0) [0|2550] "N" Vector__XXX
+ SG_ VDC_Fz_FR : 40|8@1+ (10,0) [0|2550] "N" Vector__XXX
+ SG_ VDC_Fz_FL : 32|8@1+ (10,0) [0|2550] "N" Vector__XXX
 
 BO_ 1377 Pedal_Node_status: 8 Vector__XXX
  SG_ Pedal_Node_heartbeat : 0|8@1+ (1,0) [0|255] "" Vector__XXX
@@ -273,6 +274,7 @@ BO_ 560 Throttle_Steering: 8 SSG_ECU
 BO_TX_BU_ 873 : SSG_ECU,TCU;
 
 
+CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
 CM_ BO_ 561 "5 ms";
 BA_DEF_ SG_  "GenSigSendType" ENUM  "Cyclic","OnWrite","OnWriteWithRepetition","OnChange","OnChangeWithRepetition","IfActive","IfActiveWithRepetition";
 BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 100000000000;
@@ -323,6 +325,10 @@ BA_ "NodeLayerModules" BU_ Steering "CANoeILNLVector.dll";
 BA_ "NodeLayerModules" BU_ TCU "CANoeILNLVector.dll";
 BA_ "NodeLayerModules" BU_ SSG_ECU "CANoeILNLVector.dll";
 BA_ "GenMsgCycleTime" BO_ 819 100;
+BA_ "GenSigStartValue" SG_ 617 Yaw_Rate_Rear 32768;
+BA_ "GenSigStartValue" SG_ 617 v_y 128;
+BA_ "GenSigStartValue" SG_ 617 AccY_Rear 32768;
+BA_ "GenSigStartValue" SG_ 617 AccX_Rear 32768;
 BA_ "GenSigStartValue" SG_ 1153 VDC_Yaw_Control_Weight_Selector 2;
 BA_ "GenSigStartValue" SG_ 1153 VDC_Yaw_Control_Balance 18;
 BA_ "GenSigStartValue" SG_ 1153 VDC_Lateral_Balance 5;

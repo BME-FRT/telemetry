@@ -43,8 +43,10 @@ BO_ 1385 Charger_Status: 8 Charger
  SG_ Charger_State : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 1155 TCU_InputError1: 8 TCU
- SG_ RTDS : 61|1@1- (1,0) [0|0] "" Vector__XXX
- SG_ MCU_state : 62|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Timeout_Error_Xavier : 61|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Timeout_Error_SSG_Status1 : 60|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_DV_Target_Speed : 62|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Validity_Error_DV_Target_Angle : 63|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ Timeout_Error_Rotary5 : 48|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ Timeout_Error_Rotary4 : 49|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ Timeout_Error_Rotary3 : 50|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -114,6 +116,7 @@ BO_ 1158 TCU_Status4: 8 TCU
  SG_ VDC_Efficiency_Tune : 0|8@1+ (0.01,0) [0|2.55] "" Vector__XXX
 
 BO_ 896 TCU_Status1: 8 TCU
+ SG_ VDC_DV_mode : 58|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VDC_Disable_Regbrake_F : 59|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VDC_btc_Error : 55|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VDC_Safety_Mode : 54|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -136,8 +139,8 @@ BO_ 896 TCU_Status1: 8 TCU
  SG_ VDC_Braking_Torque_Multiplier : 0|8@1+ (0.02,0) [0|5.1] "" Vector__XXX
 
 BO_ 394 MCU4_Setpoints: 8 Vector__XXX
- SG_ AMK4_TorqueLimitPositive : 32|16@1- (0.1,0) [-3276.8|3276.7] "%Mn" Vector__XXX
- SG_ AMK4_TorqueLimitNegative : 48|16@1- (0.1,0) [-3276.8|3276.7] "%Mn" Vector__XXX
+ SG_ AMK4_TorqueLimitPositive : 32|16@1+ (0.0098,0) [0|22] "Nm" Vector__XXX
+ SG_ AMK4_TorqueLimitNegative : 48|16@1+ (0.0098,0) [0|22] "Nm" Vector__XXX
  SG_ AMK4_Target_Velocity : 16|16@1- (1,0) [-32768|32767] "1/min" Vector__XXX
  SG_ AMK4_Inverter_On : 8|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ AMK4_Error_Reset : 11|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -145,8 +148,8 @@ BO_ 394 MCU4_Setpoints: 8 Vector__XXX
  SG_ AMK4_DC_On : 9|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 393 MCU3_Setpoints: 8 Vector__XXX
- SG_ AMK3_TorqueLimitPositive : 32|16@1- (0.1,0) [-3276.8|3276.7] "%Mn" Vector__XXX
- SG_ AMK3_TorqueLimitNegative : 48|16@1- (0.1,0) [-3276.8|3276.7] "%Mn" Vector__XXX
+ SG_ AMK3_TorqueLimitPositive : 32|16@1+ (0.0098,0) [0|22] "Nm" Vector__XXX
+ SG_ AMK3_TorqueLimitNegative : 48|16@1+ (0.0098,0) [0|22] "Nm" Vector__XXX
  SG_ AMK3_Target_Velocity : 16|16@1- (1,0) [-32768|32767] "1/min" Vector__XXX
  SG_ AMK3_Inverter_On : 8|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ AMK3_Error_Reset : 11|1@1+ (1,0) [0|1] "" Vector__XXX
