@@ -39,6 +39,12 @@ BU_: Charger RES EPOS Dashboard Datalogger_2D Datalogger Brightloop TCU SSG Xavi
 BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ AMK4_Control : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
 
+BO_ 0 New_Message_25: 8 Vector__XXX
+ SG_ New_Signal_237 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 770 EPOS_MSG: 6 TCU
+ SG_ EPOS_Target : 23|32@0- (1,0) [-2147483648|2147483647] "" Vector__XXX
+
 BO_ 1385 Charger_Status: 8 Charger
  SG_ Charger_State : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 

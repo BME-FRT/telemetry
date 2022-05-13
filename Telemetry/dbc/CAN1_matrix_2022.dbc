@@ -211,7 +211,7 @@ BO_ 376 ASF_Y_accel_Yaw_rate: 8 Bosch_Accel_sensor
 BO_ 105 Xavier_Setpoints: 8 Xavier
  SG_ Xavier_AS_Finish : 55|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ Xavier_heartbeat : 56|8@1+ (1,0) [0|255] "" Vector__XXX
- SG_ Xavier_Target_Steering_Angle : 7|32@0- (1E-006,1E-005) [-2147.483638|2147.483657] "rad" Vector__XXX
+ SG_ Xavier_Target_Steering_Angle : 7|32@0- (1E-006,-10) [-2147.483638|2147.483657] "rad" Vector__XXX
  SG_ Xavier_Target_speed : 39|16@0+ (0.001,0) [0|65.535] "m/s" Vector__XXX
 
 BO_ 656 Steering_Status: 8 Steering
@@ -341,7 +341,7 @@ BA_ "GenSigStartValue" SG_ 1153 VDC_Drop_Parameter_New 32;
 BA_ "GenSigStartValue" SG_ 1153 VDC_Brake_Force_Threshold 60;
 BA_ "GenSigStartValue" SG_ 1153 VDC_Brake_Force_Max 7;
 BA_ "GenSigStartValue" SG_ 1157 VDC_Torque_Demand 128.000667860721;
-BA_ "GenSigStartValue" SG_ 105 Xavier_Target_Steering_Angle 9999990;
+BA_ "GenSigStartValue" SG_ 105 Xavier_Target_Steering_Angle 20000000;
 BA_ "GenSigStartValue" SG_ 656 Rotary5 1;
 BA_ "GenSigStartValue" SG_ 656 Rotary4 1;
 BA_ "GenSigStartValue" SG_ 656 Rotary3 1;
