@@ -41,26 +41,49 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ VDC_Regbrake_Rear : 0|8@1+ (-0.0823,0) [-20.9865|0] "" Vector__XXX
  SG_ VDC_Regbrake_Front : 0|8@1+ (-0.0823,0) [-20.9865|0] "" Vector__XXX
 
-BO_ 848 Xavier_Status1: 8 Vector__XXX
- SG_ Xavier_Power_Consuption : 56|8@1+ (196.5,0) [0|50107.5] "mW" Vector__XXX
- SG_ Xavier_CPU8_usage : 51|5@1+ (3.2258,0) [0|99.9998] "%" Vector__XXX
- SG_ Xavier_CPU7_usage : 46|5@1+ (3.2258,0) [0|99.9998] "%" Vector__XXX
- SG_ Xavier_CPU6_usage : 41|5@1+ (3.2258,0) [0|99.9998] "%" Vector__XXX
- SG_ Xavier_CPU5_usage : 36|5@1+ (3.2258,0) [0|99.9998] "%" Vector__XXX
- SG_ Xavier_CPU4_usage : 31|5@1+ (3.2258,0) [0|99.9998] "%" Vector__XXX
- SG_ Xavier_CPU3_usage : 26|5@1+ (3.2258,0) [0|99.9998] "%" Vector__XXX
- SG_ Xavier_CPU2_usage : 21|5@1+ (3.2258,0) [0|99.9998] "%" Vector__XXX
- SG_ Xavier_CPU1_usage : 16|5@1+ (3.2258,0) [0|99.9998] "%" Vector__XXX
- SG_ Xavier_MAX_temperature : 9|7@1+ (1,0) [0|127] "°C" Vector__XXX
- SG_ Xavier_RAM_usage : 4|5@1+ (1,0) [0|31] "" Vector__XXX
- SG_ Xavier_heartbeat : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+BO_ 851 Xavier_Status4: 8 Vector__XXX
+ SG_ Xavier_orientation : 56|8@1+ (0.05,-6.375) [-6.375|6.375] "" Vector__XXX
+ SG_ Xavier_position_y : 44|12@1+ (0.1,-205.25) [-205.25|204.25] "" Vector__XXX
+ SG_ Xavier_position_x : 32|12@1+ (0.1,-205.25) [-205.25|204.25] "" Vector__XXX
+ SG_ Xavier_current_landmarks : 24|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Xavier_all_landmarks : 16|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Xavier_Yolo_orange_small : 12|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Xavier_Yolo_orange_big : 8|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Xavier_Yolo_blue : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Xavier_Yolo_yellow : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 850 Xavier_Status3: 8 Vector__XXX
+ SG_ Xavier_runtime : 56|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Xavier_n_updates_last_resample : 48|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Xavier_eff_n_particles : 40|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Xavier_landmark_y : 28|12@1+ (0.1,-205.25) [-205.25|204.25] "" Vector__XXX
+ SG_ Xavier_landmark_x : 16|12@1+ (0.1,-205.25) [-205.25|204.25] "" Vector__XXX
+ SG_ Xavier_landmark_id : 8|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Xavier_landmark_color : 2|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ Xavier_missionFinished : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Xavier_loopClosed : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 849 Xavier_Status2: 6 Vector__XXX
+ SG_ Xavier_steeringAngleError : 40|8@1+ (0.004,-0.51) [-0.51|0.51] "" Vector__XXX
+ SG_ Xavier_yawRateError : 32|8@1+ (0.2,-25.5) [-25.5|25.5] "" Vector__XXX
+ SG_ Xavier_crossTrackError : 24|8@1+ (0.02,-2.55) [-2.55|2.55] "" Vector__XXX
+ SG_ Xavier_headingErrorSS : 16|8@1+ (0.2,-25.5) [-25.5|25.5] "" Vector__XXX
+ SG_ Xavier_headingError : 8|8@1+ (0.025,-3.1875) [-3.1875|3.1875] "" Vector__XXX
+ SG_ Xavier_current_laps : 4|4@1+ (1,0) [0|15] "" Vector__XXX
+ SG_ Xavier_target_laps : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+
+BO_ 1 New_Message_25: 8 Vector__XXX
+ SG_ New_Signal_189 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 0 New_Message_24: 8 Vector__XXX
+ SG_ New_Signal_188 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 617 DynamicState: 8 Vector__XXX
  SG_ Yaw_Rate_Rear : 55|16@0+ (0.0001,-3.2768) [-3.2768|3.2767] "" Vector__XXX
- SG_ v_y : 8|8@1+ (0.1,-12.8) [-12.8|12.7] "" Vector__XXX
- SG_ v_x : 0|8@1+ (0.2,0) [0|51] "" Vector__XXX
- SG_ AccY_Rear : 39|16@0+ (0.001,-32.768) [-32.768|32.767] "" Vector__XXX
- SG_ AccX_Rear : 23|16@0+ (0.001,-32.768) [-32.768|32.767] "" Vector__XXX
+ SG_ v_y : 23|8@0+ (0.1,-12.8) [-12.8|12.7] "" Vector__XXX
+ SG_ v_x : 7|16@0+ (0.001,0) [0|65.535] "" Vector__XXX
+ SG_ AccY_Rear : 35|12@0+ (0.016,-32.76) [-32.76|32.76] "" Vector__XXX
+ SG_ AccX_Rear : 31|12@0+ (0.016,-32.76) [-32.76|32.76] "" Vector__XXX
 
 BO_ 820 SSG_Status2: 8 Vector__XXX
  SG_ Brake_Light : 41|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -228,6 +251,20 @@ BO_ 105 Xavier_Setpoints: 8 Xavier
  SG_ Xavier_Target_Wheel_Angle : 7|32@0- (1E-006,-10) [-2147.483638|2147.483657] "rad" Vector__XXX
  SG_ Xavier_Target_speed : 39|16@0+ (0.001,0) [0|65.535] "m/s" Vector__XXX
 
+BO_ 848 Xavier_Status1: 8 Vector__XXX
+ SG_ Xavier_Power_Consuption : 56|8@1+ (196.5,0) [0|50107.5] "mW" Vector__XXX
+ SG_ Xavier_CPU8_usage : 51|5@1+ (3.2258,0) [0|99.9998] "%" Vector__XXX
+ SG_ Xavier_CPU7_usage : 46|5@1+ (3.2258,0) [0|99.9998] "%" Vector__XXX
+ SG_ Xavier_CPU6_usage : 41|5@1+ (3.2258,0) [0|99.9998] "%" Vector__XXX
+ SG_ Xavier_CPU5_usage : 36|5@1+ (3.2258,0) [0|99.9998] "%" Vector__XXX
+ SG_ Xavier_CPU4_usage : 31|5@1+ (3.2258,0) [0|99.9998] "%" Vector__XXX
+ SG_ Xavier_CPU3_usage : 26|5@1+ (3.2258,0) [0|99.9998] "%" Vector__XXX
+ SG_ Xavier_CPU2_usage : 21|5@1+ (3.2258,0) [0|99.9998] "%" Vector__XXX
+ SG_ Xavier_CPU1_usage : 16|5@1+ (3.2258,0) [0|99.9998] "%" Vector__XXX
+ SG_ Xavier_MAX_temperature : 9|7@1+ (1,0) [0|127] "°C" Vector__XXX
+ SG_ Xavier_RAM_usage : 4|5@1+ (1,0) [0|31] "" Vector__XXX
+ SG_ Xavier_heartbeat : 0|4@1+ (1,0) [0|15] "" Vector__XXX
+
 BO_ 656 Steering_Status: 8 Steering
  SG_ Rotary5 : 24|4@1+ (1,0) [1|12] "" Vector__XXX
  SG_ Rotary4 : 28|4@1+ (1,0) [1|12] "" Vector__XXX
@@ -339,10 +376,20 @@ BA_ "NodeLayerModules" BU_ Steering "CANoeILNLVector.dll";
 BA_ "NodeLayerModules" BU_ TCU "CANoeILNLVector.dll";
 BA_ "NodeLayerModules" BU_ SSG_ECU "CANoeILNLVector.dll";
 BA_ "GenMsgCycleTime" BO_ 819 100;
+BA_ "GenSigStartValue" SG_ 851 Xavier_orientation 127.5;
+BA_ "GenSigStartValue" SG_ 851 Xavier_position_y 2052.5;
+BA_ "GenSigStartValue" SG_ 851 Xavier_position_x 2052.5;
+BA_ "GenSigStartValue" SG_ 850 Xavier_landmark_y 2052.5;
+BA_ "GenSigStartValue" SG_ 850 Xavier_landmark_x 2052.5;
+BA_ "GenSigStartValue" SG_ 849 Xavier_steeringAngleError 127.5;
+BA_ "GenSigStartValue" SG_ 849 Xavier_yawRateError 127.5;
+BA_ "GenSigStartValue" SG_ 849 Xavier_crossTrackError 127.5;
+BA_ "GenSigStartValue" SG_ 849 Xavier_headingErrorSS 127.5;
+BA_ "GenSigStartValue" SG_ 849 Xavier_headingError 127.5;
 BA_ "GenSigStartValue" SG_ 617 Yaw_Rate_Rear 32768;
 BA_ "GenSigStartValue" SG_ 617 v_y 128;
-BA_ "GenSigStartValue" SG_ 617 AccY_Rear 32768;
-BA_ "GenSigStartValue" SG_ 617 AccX_Rear 32768;
+BA_ "GenSigStartValue" SG_ 617 AccY_Rear 2047.5;
+BA_ "GenSigStartValue" SG_ 617 AccX_Rear 2047.5;
 BA_ "GenSigStartValue" SG_ 1153 VDC_Yaw_Control_Weight_Selector 2;
 BA_ "GenSigStartValue" SG_ 1153 VDC_Yaw_Control_Balance 18;
 BA_ "GenSigStartValue" SG_ 1153 VDC_Lateral_Balance 5;
