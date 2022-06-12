@@ -36,11 +36,11 @@ BS_:
 BU_: Charger RES EPOS Dashboard Datalogger_2D Datalogger Brightloop TCU SSG Xavier MCU HV_ECU SECU DCDC
 
 
-BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
- SG_ AMK4_Control : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
-
-BO_ 0 New_Message_25: 8 Vector__XXX
- SG_ New_Signal_237 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+BO_ 361 Acceleration_Front: 8 HV_ECU
+ SG_ Acc_Front_YawRate : 48|16@1+ (0.005,-163.84) [-163.84|163.835] "" Vector__XXX
+ SG_ Acc_Front_RollRate : 32|16@1+ (0.005,-163.84) [-163.84|163.835] "" Vector__XXX
+ SG_ Acc_Front_AccY : 16|16@1+ (0.0001274,-4.1746432) [-4.1746432|4.1745158] "" Vector__XXX
+ SG_ Acc_Front_AccX : 0|16@1+ (0.0001274,-4.1746432) [-4.1746432|4.1745158] "" Vector__XXX
 
 BO_ 770 EPOS_MSG: 6 TCU
  SG_ EPOS_Target : 23|32@0- (1,0) [-2147483648|2147483647] "" Vector__XXX
@@ -144,7 +144,7 @@ BO_ 896 TCU_Status1: 8 TCU
  SG_ VDC_Driving_Torque_Multiplier : 8|8@1+ (0.01,0) [0|2.55] "" Vector__XXX
  SG_ VDC_Braking_Torque_Multiplier : 0|8@1+ (0.02,0) [0|5.1] "" Vector__XXX
 
-BO_ 394 MCU4_Setpoints: 8 Vector__XXX
+BO_ 394 MCU4_Setpoints: 8 TCU
  SG_ AMK4_TorqueLimitPositive : 32|16@1+ (0.0098,0) [0|22] "Nm" Vector__XXX
  SG_ AMK4_TorqueLimitNegative : 48|16@1+ (0.0098,0) [0|22] "Nm" Vector__XXX
  SG_ AMK4_Target_Velocity : 16|16@1- (1,0) [-32768|32767] "1/min" Vector__XXX
@@ -153,7 +153,7 @@ BO_ 394 MCU4_Setpoints: 8 Vector__XXX
  SG_ AMK4_Enable : 10|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ AMK4_DC_On : 9|1@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 393 MCU3_Setpoints: 8 Vector__XXX
+BO_ 393 MCU3_Setpoints: 8 TCU
  SG_ AMK3_TorqueLimitPositive : 32|16@1+ (0.0098,0) [0|22] "Nm" Vector__XXX
  SG_ AMK3_TorqueLimitNegative : 48|16@1+ (0.0098,0) [0|22] "Nm" Vector__XXX
  SG_ AMK3_Target_Velocity : 16|16@1- (1,0) [-32768|32767] "1/min" Vector__XXX
@@ -162,36 +162,36 @@ BO_ 393 MCU3_Setpoints: 8 Vector__XXX
  SG_ AMK3_Enable : 10|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ AMK3_DC_On : 9|1@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 651 AMK4_Actual_Values_2: 8 Vector__XXX
+BO_ 651 AMK4_Actual_Values_2: 8 MCU
  SG_ AMK4_temp_motor : 0|16@1- (0.1,0) [0|1300] "C�" Vector__XXX
  SG_ AMK4_temp_inverter : 16|16@1- (0.1,0) [0|1300] "C�" Vector__XXX
  SG_ AMK4_temp_IGBT : 48|16@1- (0.1,0) [0|1300] "C�" Vector__XXX
  SG_ AMK4_error_info : 32|16@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 649 AMK4_Actual_Values_1: 8 Vector__XXX
+BO_ 649 AMK4_Actual_Values_1: 8 MCU
  SG_ AMK4_torque_current : 32|16@1- (0.008778889272,0) [0|0] "" Vector__XXX
  SG_ AMK4_status : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ AMK4_magnetizing_current : 48|16@1- (0.008778889272,0) [0|0] "" Vector__XXX
  SG_ AMK4_actual_velocity : 16|16@1- (1,0) [-5000|30000] "1/min" Vector__XXX
 
-BO_ 650 AMK3_Actual_Values_2: 8 Vector__XXX
+BO_ 650 AMK3_Actual_Values_2: 8 MCU
  SG_ AMK3_temp_motor : 0|16@1- (0.1,0) [0|1300] "C�" Vector__XXX
  SG_ AMK3_temp_inverter : 16|16@1- (0.1,0) [0|1300] "C�" Vector__XXX
  SG_ AMK3_temp_IGBT : 48|16@1- (0.1,0) [0|1300] "C�" Vector__XXX
  SG_ AMK3_error_info : 32|16@1+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 648 AMK3_Actual_Values_1: 8 Vector__XXX
+BO_ 648 AMK3_Actual_Values_1: 8 MCU
  SG_ AMK3_torque_current : 32|16@1- (0.008778889272,0) [0|0] "" Vector__XXX
  SG_ AMK3_status : 0|16@1+ (1,0) [0|0] "" Vector__XXX
  SG_ AMK3_magnetizing_current : 48|16@1- (0.008778889272,0) [0|0] "" Vector__XXX
  SG_ AMK3_actual_velocity : 16|16@1- (1,0) [-5000|30000] "1/min" Vector__XXX
 
-BO_ 528 HV_Cell_Values: 8 Vector__XXX
+BO_ 528 HV_Cell_Values: 8 HV_ECU
  SG_ HV_Cell_Voltage : 15|16@0+ (1,0) [0|65535] "V" Vector__XXX
  SG_ HV_Cell_Temperature : 31|16@0+ (0.1,0) [0|0] "" Vector__XXX
  SG_ HV_Cell_ID : 7|8@0+ (1,0) [0|255] "" Vector__XXX
 
-BO_ 530 HV_Accumulator_Status: 8 Vector__XXX
+BO_ 530 HV_Accumulator_Status: 8 HV_ECU
  SG_ HV_Cell_OT : 28|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ AIR_plus_State : 12|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ AIR_minus_state : 11|1@0+ (1,0) [0|1] "" Vector__XXX
@@ -217,29 +217,29 @@ BO_ 530 HV_Accumulator_Status: 8 Vector__XXX
  SG_ Error_STAMP_TSAL : 17|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ Driver_Protection_State : 23|1@0+ (1,0) [0|0] "" Vector__XXX
 
-BO_ 532 HV_Battery_Status: 8 Vector__XXX
+BO_ 532 HV_Battery_Status: 8 HV_ECU
  SG_ State_of_Charge : 55|16@0+ (1,0) [0|65535] "mAh" Vector__XXX
  SG_ HV_Voltage_Before_AIRs : 7|16@0+ (0.1,0) [0|6553.5] "V" Vector__XXX
  SG_ HV_Voltage_After_AIRs : 23|16@0+ (0.1,0) [0|6553.5] "V" Vector__XXX
  SG_ HV_Current : 39|16@0- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
 
-BO_ 1378 Dashboard_Status: 8 Vector__XXX
+BO_ 1378 Dashboard_Status: 8 Dashboard
  SG_ Dashboarrd_heartbeat : 0|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ Dashboard_ID : 8|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ Dash_XLAT : 17|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ Dash_MODE : 16|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ Dash_BLANK : 18|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ Button_START : 20|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Button_ON : 19|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ Button_OFF : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Button_ON : 21|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Button_OFF : 19|1@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 787 HV_Critical_Cell_Values: 8 Vector__XXX
+BO_ 787 HV_Critical_Cell_Values: 8 HV_ECU
  SG_ HV_Cell_Voltage_MIN : 15|16@0+ (1,0) [0|65535] "" Vector__XXX
  SG_ HV_Cell_Temp_MAX : 31|16@0+ (0.1,0) [0|6553.5] "" Vector__XXX
  SG_ Critical_cell_values_heartbeat : 7|8@0+ (1,0) [0|255] "" Vector__XXX
 
-BO_ 401 RES_PDO: 8 Vector__XXX
- SG_ RES_GO_Signal : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+BO_ 401 RES_PDO: 8 RES
+ SG_ RES_GO_Signal : 2|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 917 NDCDCValueOutput2: 8 DCDC
  SG_ IDCDCOutput2Max : 43|10@1+ (0.5,-200) [-200|311.5] "A"  SECU
@@ -309,7 +309,7 @@ BO_ 914 NDCDCStatus: 8 DCDC
  SG_ BDCDCWakeUp : 4|1@1+ (1,0) [0|1] ""  SECU
  SG_ NDCDCState : 0|4@1+ (1,0) [0|15] ""  SECU
 
-BO_ 913 NDCDCSetpoints: 8 SECU
+BO_ 913 NDCDCSetpoints: 8 HV_ECU
  SG_ VDCDCHVSetpoint m9 : 8|12@1+ (0.25,0) [0|1023.75] "V"  DCDC
  SG_ IDCDCHVLimit m9 : 20|12@1+ (0.0125,-25) [-25|26.1875] "A"  DCDC
  SG_ VDCDCLV2Setpoint m2 : 8|12@1+ (0.0152942148,0) [0|62.629809606] "V"  DCDC
@@ -318,7 +318,7 @@ BO_ 913 NDCDCSetpoints: 8 SECU
  SG_ IDCDCLV1Limit m1 : 20|12@1+ (0.25,-500) [-500|523.75] "A"  DCDC
  SG_ NDCDCMultiplexer M : 0|8@1+ (1,0) [0|255] ""  DCDC
 
-BO_ 912 NDCDCControl: 8 SECU
+BO_ 912 NDCDCControl: 8 HV_ECU
  SG_ BDCDCRegenerationOn : 17|1@1+ (1,0) [0|1] ""  DCDC
  SG_ BDCDCUmbilicalOn : 16|1@1+ (1,0) [0|1] ""  DCDC
  SG_ BDCDCOutput2Requested : 9|1@1+ (1,0) [0|1] ""  DCDC
@@ -327,7 +327,6 @@ BO_ 912 NDCDCControl: 8 SECU
 
 
 
-CM_ BO_ 3221225472 "This is a message for not used signals, created by Vector CANdb++ DBC OLE DB Provider.";
 BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 2 100000;
 BA_DEF_ BO_  "GenMsgCycleTime" INT 2 50000;
 BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 100000000000;
@@ -348,6 +347,10 @@ BA_DEF_DEF_  "CANoeJitterMax" 0;
 BA_DEF_DEF_  "CANoeJitterMin" 0;
 BA_DEF_DEF_  "CANoeDrift" 0;
 BA_DEF_DEF_  "CANoeStartDelay" 0;
+BA_ "GenSigStartValue" SG_ 361 Acc_Front_YawRate 32768;
+BA_ "GenSigStartValue" SG_ 361 Acc_Front_RollRate 32768;
+BA_ "GenSigStartValue" SG_ 361 Acc_Front_AccY 32768;
+BA_ "GenSigStartValue" SG_ 361 Acc_Front_AccX 32768;
 BA_ "GenSigStartValue" SG_ 1159 VDC_Optimal_Slip 12;
 BA_ "GenSigStartValue" SG_ 1159 VDC_Slip_Control_P 8;
 BA_ "GenSigStartValue" SG_ 1159 VDC_Track_Length 100;

@@ -37,9 +37,15 @@ BU_: Datalogger_2D Xavier MCU HVECU Bosch_Accel_sensor PedalNode Steering TCU SS
 
 
 BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ BAG_START : 0|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VDC_v_x : 0|8@1+ (0.2,0) [0|51] "" Vector__XXX
  SG_ VDC_Regbrake_Rear : 0|8@1+ (-0.0823,0) [-20.9865|0] "" Vector__XXX
  SG_ VDC_Regbrake_Front : 0|8@1+ (-0.0823,0) [-20.9865|0] "" Vector__XXX
+ SG_ New_Signal_189 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ New_Signal_188 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ASF_X_Acceleration : 0|16@1+ (-0.001249794,40.9352) [-40.97004979|40.9352] "" Vector__XXX
+ SG_ ASF_Yaw_rate : 0|16@1+ (8.72638E-005,-2.8598) [-2.8598|2.859033133] "rad/s" Vector__XXX
+ SG_ ASF_Y_Acceleration : 0|16@1+ (-0.001249794,40.9352) [-40.97004979|40.9352] "" Vector__XXX
 
 BO_ 851 Xavier_Status4: 8 Vector__XXX
  SG_ Xavier_orientation : 56|8@1+ (0.05,-6.375) [-6.375|6.375] "" Vector__XXX
@@ -72,18 +78,12 @@ BO_ 849 Xavier_Status2: 6 Vector__XXX
  SG_ Xavier_current_laps : 4|4@1+ (1,0) [0|15] "" Vector__XXX
  SG_ Xavier_target_laps : 0|4@1+ (1,0) [0|15] "" Vector__XXX
 
-BO_ 1 New_Message_25: 8 Vector__XXX
- SG_ New_Signal_189 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
-
-BO_ 0 New_Message_24: 8 Vector__XXX
- SG_ New_Signal_188 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
-
 BO_ 617 DynamicState: 8 Vector__XXX
  SG_ Yaw_Rate_Rear : 55|16@0+ (0.0001,-3.2768) [-3.2768|3.2767] "" Vector__XXX
  SG_ v_y : 23|8@0+ (0.1,-12.8) [-12.8|12.7] "" Vector__XXX
  SG_ v_x : 7|16@0+ (0.001,0) [0|65.535] "" Vector__XXX
- SG_ AccY_Rear : 35|12@0+ (0.016,-32.76) [-32.76|32.76] "" Vector__XXX
- SG_ AccX_Rear : 31|12@0+ (0.016,-32.76) [-32.76|32.76] "" Vector__XXX
+ SG_ AccY_Rear : 35|12@0+ (0.016,-32.768) [-32.768|32.752] "" Vector__XXX
+ SG_ AccX_Rear : 31|12@0+ (0.016,-32.768) [-32.768|32.752] "" Vector__XXX
 
 BO_ 820 SSG_Status2: 8 Vector__XXX
  SG_ Brake_Light : 41|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -192,8 +192,8 @@ BO_ 389 MCU1_Setpoints: 8 Vector__XXX
  SG_ AMK1_DC_On : 9|1@1+ (1,0) [0|1] "" Vector__XXX
 
 BO_ 1153 TCU_Status2: 8 TCU
- SG_ VDC_EPOS_State : 56|2@1+ (1,0) [0|2] "" Vector__XXX
- SG_ VDC_MCU_State : 58|2@1- (1,0) [0|2] "" Vector__XXX
+ SG_ VDC_EPOS_State : 56|2@1+ (1,0) [0|3] "" Vector__XXX
+ SG_ VDC_MCU_State : 58|2@1+ (1,0) [0|3] "" Vector__XXX
  SG_ VDC_Yaw_Control_Weight_Selector : 22|2@1+ (1,0) [0|3] "" Vector__XXX
  SG_ VDC_Yaw_Control_Balance : 16|6@1+ (0.02,0) [0|1.26] "" Vector__XXX
  SG_ VDC_Lateral_Balance : 60|4@1+ (0.02,0.9) [0.9|1.2] "" Vector__XXX
@@ -207,6 +207,7 @@ BO_ 1153 TCU_Status2: 8 TCU
  SG_ VDC_Brake_Force_Max : 4|4@1+ (100,0) [0|1500] "" Vector__XXX
 
 BO_ 1157 TCU_Status3: 8 TCU
+ SG_ TCU_CPU_Usage_Max : 0|8@1+ (0.39216,0) [0|100.0008] "%" Vector__XXX
  SG_ VDC_Torque_Demand : 8|8@1+ (0.65882,-84.3294) [-84.3294|83.6697] "Nm" Vector__XXX
  SG_ VDC_Fz_RR : 56|8@1+ (10,0) [0|2550] "N" Vector__XXX
  SG_ VDC_Fz_RL : 48|8@1+ (10,0) [0|2550] "N" Vector__XXX
@@ -238,15 +239,8 @@ BO_ 873 SteeringDisplay: 8 TCU
  SG_ Steering_letter2 : 8|8@1+ (1,0) [0|0] "char" Vector__XXX
  SG_ Steering_letter1 : 0|8@1+ (1,0) [0|0] "char" Vector__XXX
 
-BO_ 372 ASF_X_accel: 8 Bosch_Accel_sensor
- SG_ ASF_X_Acceleration : 32|16@1+ (-0.001249794,40.9352) [-40.97004979|40.9352] "" Vector__XXX
-
-BO_ 376 ASF_Y_accel_Yaw_rate: 8 Bosch_Accel_sensor
- SG_ ASF_Yaw_rate : 32|16@1+ (8.72638E-005,-2.8598) [-2.8598|2.859033133] "rad/s" Vector__XXX
- SG_ ASF_Y_Acceleration : 0|16@1+ (-0.001249794,40.9352) [-40.97004979|40.9352] "" Vector__XXX
-
 BO_ 105 Xavier_Setpoints: 8 Xavier
- SG_ Xavier_AS_Finish : 55|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Xavier_AS_Finish : 48|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ Xavier_Control_heartbeat : 56|8@1+ (1,0) [0|255] "" Vector__XXX
  SG_ Xavier_Target_Wheel_Angle : 7|32@0- (1E-006,-10) [-2147.483638|2147.483657] "rad" Vector__XXX
  SG_ Xavier_Target_speed : 39|16@0+ (0.001,0) [0|65.535] "m/s" Vector__XXX
@@ -388,8 +382,8 @@ BA_ "GenSigStartValue" SG_ 849 Xavier_headingErrorSS 127.5;
 BA_ "GenSigStartValue" SG_ 849 Xavier_headingError 127.5;
 BA_ "GenSigStartValue" SG_ 617 Yaw_Rate_Rear 32768;
 BA_ "GenSigStartValue" SG_ 617 v_y 128;
-BA_ "GenSigStartValue" SG_ 617 AccY_Rear 2047.5;
-BA_ "GenSigStartValue" SG_ 617 AccX_Rear 2047.5;
+BA_ "GenSigStartValue" SG_ 617 AccY_Rear 2048;
+BA_ "GenSigStartValue" SG_ 617 AccX_Rear 2048;
 BA_ "GenSigStartValue" SG_ 1153 VDC_Yaw_Control_Weight_Selector 2;
 BA_ "GenSigStartValue" SG_ 1153 VDC_Yaw_Control_Balance 18;
 BA_ "GenSigStartValue" SG_ 1153 VDC_Lateral_Balance 5;

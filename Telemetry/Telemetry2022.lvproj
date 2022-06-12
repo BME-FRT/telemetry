@@ -157,6 +157,7 @@
 			<Item Name="conversion_init.vi" Type="VI" URL="../SubVI/conversion_init.vi"/>
 			<Item Name="conversion_loop.vi" Type="VI" URL="../SubVI/conversion_loop.vi"/>
 			<Item Name="delifbothzero.vi" Type="VI" URL="../SubVI/delifbothzero.vi"/>
+			<Item Name="fletcher32.vi" Type="VI" URL="../SubVI/fletcher32.vi"/>
 			<Item Name="get_signal_list.vi" Type="VI" URL="../SubVI/get_signal_list.vi"/>
 			<Item Name="heatmap.vi" Type="VI" URL="../SubVI/heatmap.vi"/>
 			<Item Name="hvaccuid.vi" Type="VI" URL="../SubVI/hvaccuid.vi"/>
@@ -203,7 +204,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{D0569CA3-EAD2-413B-A09F-FD04BC904ED7}</Property>
-				<Property Name="Bld_version.build" Type="Int">24</Property>
+				<Property Name="Bld_version.build" Type="Int">28</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Telemetry2022.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME.exe</Property>
@@ -213,7 +214,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Source[0].Container.applyDestination" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{919760CB-DCC3-4963-BE4C-A3E75D8A323C}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{ADEC402C-6987-488A-9A70-DC5A5913E760}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Telemetry2022.vi</Property>
