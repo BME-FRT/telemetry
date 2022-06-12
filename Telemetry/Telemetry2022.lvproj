@@ -184,6 +184,7 @@
 			<Item Name="Runsheet.vi" Type="VI" URL="../SubVI/Runsheet.vi"/>
 			<Item Name="sc_decode.vi" Type="VI" URL="../SubVI/sc_decode.vi"/>
 			<Item Name="sc_store.vi" Type="VI" URL="../SubVI/sc_store.vi"/>
+			<Item Name="timeelapsed.vi" Type="VI" URL="../SubVI/timeelapsed.vi"/>
 			<Item Name="timestamp2sec.vi" Type="VI" URL="../SubVI/timestamp2sec.vi"/>
 			<Item Name="vdc_state_driver.vi" Type="VI" URL="../SubVI/vdc_state_driver.vi"/>
 			<Item Name="xnet_init.vi" Type="VI" URL="../SubVI/xnet_init.vi"/>
@@ -204,7 +205,7 @@
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
 				<Property Name="Bld_previewCacheID" Type="Str">{D0569CA3-EAD2-413B-A09F-FD04BC904ED7}</Property>
-				<Property Name="Bld_version.build" Type="Int">29</Property>
+				<Property Name="Bld_version.build" Type="Int">30</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Telemetry2022.exe</Property>
 				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME.exe</Property>
@@ -214,7 +215,7 @@
 				<Property Name="Destination[1].path" Type="Path">../builds/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
 				<Property Name="Source[0].Container.applyDestination" Type="Bool">true</Property>
-				<Property Name="Source[0].itemID" Type="Str">{792EC334-C1EF-4A93-AA4B-D47129F4D23E}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{B643117F-5AA8-4834-9A14-B4E8B15D3EB9}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Telemetry2022.vi</Property>
