@@ -37,12 +37,9 @@ BU_: Datalogger_2D Xavier MCU HVECU Bosch_Accel_sensor PedalNode Steering TCU SS
 
 
 BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
- SG_ BAG_START : 0|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VDC_v_x : 0|8@1+ (0.2,0) [0|51] "" Vector__XXX
  SG_ VDC_Regbrake_Rear : 0|8@1+ (-0.0823,0) [-20.9865|0] "" Vector__XXX
  SG_ VDC_Regbrake_Front : 0|8@1+ (-0.0823,0) [-20.9865|0] "" Vector__XXX
- SG_ New_Signal_189 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
- SG_ New_Signal_188 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
  SG_ ASF_X_Acceleration : 0|16@1+ (-0.001249794,40.9352) [-40.97004979|40.9352] "" Vector__XXX
  SG_ ASF_Yaw_rate : 0|16@1+ (8.72638E-005,-2.8598) [-2.8598|2.859033133] "rad/s" Vector__XXX
  SG_ ASF_Y_Acceleration : 0|16@1+ (-0.001249794,40.9352) [-40.97004979|40.9352] "" Vector__XXX
@@ -115,6 +112,7 @@ BO_ 820 SSG_Status2: 8 Vector__XXX
  SG_ ACCELERATION_LED : 0|2@1+ (1,0) [0|3] "" Vector__XXX
 
 BO_ 819 SSG_Status1: 8 Vector__XXX
+ SG_ BAG_START : 55|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ AS_State : 52|3@1+ (1,0) [0|7] "" Vector__XXX
  SG_ TCU_Heartbeat_error : 47|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ Steering_Heartbeat_error : 51|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -136,14 +134,14 @@ BO_ 819 SSG_Status1: 8 Vector__XXX
  SG_ ASMS : 34|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ AS_GO_Signal : 33|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ WATCHDOG : 32|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ SET_FINISH_STATE : 20|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ TS_ACTIVATION_BUTTON_COCKPIT : 20|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ SB_FB : 30|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ SB_ENGAGE : 29|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ nSet_Driving_State : 28|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ nSB_ENGAGE : 29|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ AS_DRIVING_MODE : 28|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ nEBS_SET_ACTIVE : 27|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ nEBS_IS_TRIGGERED : 26|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DV_SDC_CLOSE : 26|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ nEBS_ENGAGE : 25|1@1+ (1,0) [0|0] "" Vector__XXX
- SG_ EBS_IS_ACTIVE : 24|1@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ DV_SDC_READY : 24|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ EBS_FB : 21|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ Driving_State_Active : 31|1@1+ (1,0) [0|0] "" Vector__XXX
  SG_ SC_START : 23|1@1+ (1,0) [0|1] "" Vector__XXX

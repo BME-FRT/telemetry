@@ -192,26 +192,26 @@ BO_ 528 HV_Cell_Values: 8 HV_ECU
  SG_ HV_Cell_ID : 7|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 530 HV_Accumulator_Status: 8 HV_ECU
- SG_ HV_Cell_OT : 28|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HV_Cell_OT : 26|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ AIR_plus_State : 12|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ AIR_minus_state : 11|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ AMS_Status : 15|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ AMS_Relay_State : 20|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ TSAL_RED : 18|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ TSAL_GREEN : 21|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ TS_Overcurrent : 31|1@0+ (1,0) [0|0] "" Vector__XXX
- SG_ TS_Over_Voltage : 29|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TS_Overcurrent : 29|1@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ TS_Over_Voltage : 27|1@0+ (1,0) [0|0] "" Vector__XXX
  SG_ Place_of_error : 39|16@0+ (1,0) [0|255] "" Vector__XXX
  SG_ PC_State : 9|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ PC_Error : 30|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ PC_Error : 28|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ MCU_STAMP : 16|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ IMD_Status : 14|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ IMD_Relay_State : 19|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ HV_ECU_SC_Endline_State : 10|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ HV_ECU_Heartbeat : 7|8@0+ (1,0) [0|255] "" Vector__XXX
  SG_ HV_DetStatus : 13|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ HV_Cell_UV : 26|1@0+ (1,0) [0|1] "" Vector__XXX
- SG_ HV_Cell_OV : 27|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HV_Cell_UV : 24|1@0+ (1,0) [0|1] "" Vector__XXX
+ SG_ HV_Cell_OV : 25|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ HV_Acc_Menu : 22|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ Error_value : 55|16@0+ (1,0) [0|65535] "" Vector__XXX
  SG_ Error_STAMP_TSAL : 17|1@0+ (1,0) [0|1] "" Vector__XXX
