@@ -44,6 +44,9 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ ASF_Yaw_rate : 0|16@1+ (8.72638E-005,-2.8598) [-2.8598|2.859033133] "rad/s" Vector__XXX
  SG_ ASF_Y_Acceleration : 0|16@1+ (-0.001249794,40.9352) [-40.97004979|40.9352] "" Vector__XXX
 
+BO_ 624 Vectornav_Yaw_raw: 8 Vector__XXX
+ SG_ Vectornav_yaw_rate_rear_value : 7|16@0+ (0.0001,-3.2768) [-3.2768|3.2767] "" Vector__XXX
+
 BO_ 851 Xavier_Status4: 8 Vector__XXX
  SG_ Xavier_orientation : 56|8@1+ (0.05,-6.375) [-6.375|6.375] "" Vector__XXX
  SG_ Xavier_position_y : 44|12@1+ (0.1,-205.25) [-205.25|204.25] "" Vector__XXX
@@ -83,6 +86,7 @@ BO_ 617 DynamicState: 8 Vector__XXX
  SG_ AccX_Rear : 31|12@0+ (0.016,-32.768) [-32.768|32.752] "" Vector__XXX
 
 BO_ 820 SSG_Status2: 8 Vector__XXX
+ SG_ EBS_RELAY_FB : 42|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ Brake_Light : 41|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ PPS2 : 48|8@1+ (0.1,0) [0|409.5] "bar" Vector__XXX
  SG_ SC_MCU_FB : 36|1@1+ (1,0) [0|1] "" Vector__XXX
@@ -201,7 +205,7 @@ BO_ 1153 TCU_Status2: 8 TCU
  SG_ VDC_M_Yaw_Limit : 0|4@1+ (100,0) [0|1500] "" Vector__XXX
  SG_ VDC_M_Yaw : 8|8@1+ (20,-2560) [-2560|2540] "" Vector__XXX
  SG_ VDC_Drop_Parameter_New : 48|8@1+ (0.005,0) [0|1.275] "" Vector__XXX
- SG_ VDC_Brake_Force_Threshold : 24|8@1+ (5,0) [0|1275] "" Vector__XXX
+ SG_ VDC_Brake_Balance : 24|8@1+ (0.02,0) [0|5.1] "" Vector__XXX
  SG_ VDC_Brake_Force_Max : 4|4@1+ (100,0) [0|1500] "" Vector__XXX
 
 BO_ 1157 TCU_Status3: 8 TCU
@@ -294,6 +298,7 @@ BO_ 644 AMK1_Actual_Values_1: 8 MCU
  SG_ AMK1_actual_velocity : 16|16@1- (1,0) [-5000|30000] "1/min" Vector__XXX
 
 BO_ 561 Brake_SC_endline: 8 SSG_ECU
+ SG_ BFS_Offset : 58|3@0+ (50,0) [0|350] "" Vector__XXX
  SG_ SC_ENDLINE : 51|5@1+ (1,0) [0|31] "V"  TCU
  SG_ Brake_pressure_rear_validity : 50|1@1+ (1,0) [0|1] ""  TCU
  SG_ Brake_pressure_rear : 32|16@1+ (0.1,0) [0|1400] "bar"  TCU
@@ -303,14 +308,14 @@ BO_ 561 Brake_SC_endline: 8 SSG_ECU
  SG_ Brake_Force_sensor : 0|16@1+ (1,0) [0|1500] "N"  TCU
 
 BO_ 560 Throttle_Steering: 8 SSG_ECU
- SG_ STA_plausiblity : 37|1@1+ (1,0) [0|1] ""  TCU
- SG_ STA2_validity : 36|1@1+ (1,0) [0|1] ""  TCU
- SG_ STA1_validity : 35|1@1+ (1,0) [0|1] ""  TCU
- SG_ APPS_plausiblity : 34|1@1+ (1,0) [0|1] ""  TCU
- SG_ APPS2_validity : 33|1@1+ (1,0) [0|1] ""  TCU
- SG_ APPS1_validity : 32|1@1+ (1,0) [0|1] ""  TCU
- SG_ STA2_position : 24|8@1+ (1,0) [0|255] "�"  TCU
- SG_ STA1_position : 16|8@1+ (1,0) [0|255] "�"  TCU
+ SG_ STA_plausiblity : 53|1@1+ (1,0) [0|1] ""  TCU
+ SG_ STA2_validity : 52|1@1+ (1,0) [0|1] ""  TCU
+ SG_ STA1_validity : 51|1@1+ (1,0) [0|1] ""  TCU
+ SG_ APPS_plausiblity : 50|1@1+ (1,0) [0|1] ""  TCU
+ SG_ APPS2_validity : 49|1@1+ (1,0) [0|1] ""  TCU
+ SG_ APPS1_validity : 48|1@1+ (1,0) [0|1] ""  TCU
+ SG_ STA2_position : 39|16@0+ (0.01,0) [0|655.35] "�"  TCU
+ SG_ STA1_position : 23|16@0+ (0.01,0) [0|655.35] "�"  TCU
  SG_ APPS2_posiition : 8|8@1+ (1,0) [0|100] "%"  TCU
  SG_ APPS1_position : 0|8@1+ (1,0) [0|100] "%"  TCU
 
@@ -368,6 +373,7 @@ BA_ "NodeLayerModules" BU_ Steering "CANoeILNLVector.dll";
 BA_ "NodeLayerModules" BU_ TCU "CANoeILNLVector.dll";
 BA_ "NodeLayerModules" BU_ SSG_ECU "CANoeILNLVector.dll";
 BA_ "GenMsgCycleTime" BO_ 819 100;
+BA_ "GenSigStartValue" SG_ 624 Vectornav_yaw_rate_rear_value 32768;
 BA_ "GenSigStartValue" SG_ 851 Xavier_orientation 127.5;
 BA_ "GenSigStartValue" SG_ 851 Xavier_position_y 2052.5;
 BA_ "GenSigStartValue" SG_ 851 Xavier_position_x 2052.5;
@@ -391,7 +397,7 @@ BA_ "GenSigStartValue" SG_ 1153 VDC_Powlim_Approx 10;
 BA_ "GenSigStartValue" SG_ 1153 VDC_M_Yaw_Limit 7;
 BA_ "GenSigStartValue" SG_ 1153 VDC_M_Yaw 128;
 BA_ "GenSigStartValue" SG_ 1153 VDC_Drop_Parameter_New 32;
-BA_ "GenSigStartValue" SG_ 1153 VDC_Brake_Force_Threshold 60;
+BA_ "GenSigStartValue" SG_ 1153 VDC_Brake_Balance 32;
 BA_ "GenSigStartValue" SG_ 1153 VDC_Brake_Force_Max 7;
 BA_ "GenSigStartValue" SG_ 1157 VDC_Torque_Demand 128.000667860721;
 BA_ "GenSigStartValue" SG_ 105 Xavier_Target_Wheel_Angle 20000000;

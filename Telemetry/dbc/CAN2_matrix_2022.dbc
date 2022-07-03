@@ -105,9 +105,9 @@ BO_ 1155 TCU_InputError1: 8 TCU
 
 BO_ 1159 TCU_Status5: 5 TCU
  SG_ VDC_Optimal_Slip : 32|8@1+ (0.01,0) [0|2.55] "" Vector__XXX
- SG_ VDC_Slip_Control_D : 24|4@1+ (25,0) [0|375] "" Vector__XXX
- SG_ VDC_Slip_Control_I : 28|4@1+ (25,0) [0|375] "" Vector__XXX
- SG_ VDC_Slip_Control_P : 16|8@1+ (50,0) [0|12750] "" Vector__XXX
+ SG_ VDC_Slip_Control_D : 24|4@1+ (5,0) [0|75] "" Vector__XXX
+ SG_ VDC_Slip_Control_I : 28|4@1+ (20,0) [0|300] "" Vector__XXX
+ SG_ VDC_Slip_Control_P : 16|8@1+ (25,0) [0|6375] "" Vector__XXX
  SG_ VDC_Track_Length : 8|8@1+ (10,0) [0|2550] "" Vector__XXX
  SG_ VDC_Laps : 0|8@1+ (1,0) [0|255] "" Vector__XXX
 
@@ -192,6 +192,7 @@ BO_ 528 HV_Cell_Values: 8 HV_ECU
  SG_ HV_Cell_ID : 7|8@0+ (1,0) [0|255] "" Vector__XXX
 
 BO_ 530 HV_Accumulator_Status: 8 HV_ECU
+ SG_ HV_DetStatus2 : 8|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ HV_Cell_OT : 26|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ AIR_plus_State : 12|1@0+ (1,0) [0|1] "" Vector__XXX
  SG_ AIR_minus_state : 11|1@0+ (1,0) [0|1] "" Vector__XXX
@@ -352,7 +353,9 @@ BA_ "GenSigStartValue" SG_ 361 Acc_Front_RollRate 32768;
 BA_ "GenSigStartValue" SG_ 361 Acc_Front_AccY 32768;
 BA_ "GenSigStartValue" SG_ 361 Acc_Front_AccX 32768;
 BA_ "GenSigStartValue" SG_ 1159 VDC_Optimal_Slip 12;
-BA_ "GenSigStartValue" SG_ 1159 VDC_Slip_Control_P 8;
+BA_ "GenSigStartValue" SG_ 1159 VDC_Slip_Control_D 5;
+BA_ "GenSigStartValue" SG_ 1159 VDC_Slip_Control_I 5;
+BA_ "GenSigStartValue" SG_ 1159 VDC_Slip_Control_P 14;
 BA_ "GenSigStartValue" SG_ 1159 VDC_Track_Length 100;
 BA_ "GenSigStartValue" SG_ 1158 VDC_Static_Weight_Distribution 8;
 BA_ "GenSigStartValue" SG_ 1158 VDC_TC_Threshold 50;
