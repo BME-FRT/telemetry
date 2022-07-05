@@ -86,6 +86,8 @@ BO_ 617 DynamicState: 8 Vector__XXX
  SG_ AccX_Rear : 31|12@0+ (0.016,-32.768) [-32.768|32.752] "" Vector__XXX
 
 BO_ 820 SSG_Status2: 8 Vector__XXX
+ SG_ sc_latch_place_of_error : 44|3@1+ (1,0) [0|7] "" Vector__XXX
+ SG_ sc_latch : 43|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ EBS_RELAY_FB : 42|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ Brake_Light : 41|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ PPS2 : 48|8@1+ (0.1,0) [0|409.5] "bar" Vector__XXX
@@ -308,14 +310,14 @@ BO_ 561 Brake_SC_endline: 8 SSG_ECU
  SG_ Brake_Force_sensor : 0|16@1+ (1,0) [0|1500] "N"  TCU
 
 BO_ 560 Throttle_Steering: 8 SSG_ECU
- SG_ STA_plausiblity : 53|1@1+ (1,0) [0|1] ""  TCU
- SG_ STA2_validity : 52|1@1+ (1,0) [0|1] ""  TCU
- SG_ STA1_validity : 51|1@1+ (1,0) [0|1] ""  TCU
- SG_ APPS_plausiblity : 50|1@1+ (1,0) [0|1] ""  TCU
- SG_ APPS2_validity : 49|1@1+ (1,0) [0|1] ""  TCU
- SG_ APPS1_validity : 48|1@1+ (1,0) [0|1] ""  TCU
- SG_ STA2_position : 39|16@0+ (0.01,0) [0|655.35] "�"  TCU
- SG_ STA1_position : 23|16@0+ (0.01,0) [0|655.35] "�"  TCU
+ SG_ STA_plausiblity : 37|1@1+ (1,0) [0|1] ""  TCU
+ SG_ STA2_validity : 36|1@1+ (1,0) [0|1] ""  TCU
+ SG_ STA1_validity : 35|1@1+ (1,0) [0|1] ""  TCU
+ SG_ APPS_plausiblity : 34|1@1+ (1,0) [0|1] ""  TCU
+ SG_ APPS2_validity : 33|1@1+ (1,0) [0|1] ""  TCU
+ SG_ APPS1_validity : 32|1@1+ (1,0) [0|1] ""  TCU
+ SG_ STA2_position : 31|8@0+ (1,0) [0|255] "�"  TCU
+ SG_ STA1_position : 23|8@0+ (1,0) [0|255] "�"  TCU
  SG_ APPS2_posiition : 8|8@1+ (1,0) [0|100] "%"  TCU
  SG_ APPS1_position : 0|8@1+ (1,0) [0|100] "%"  TCU
 
