@@ -36,6 +36,11 @@ BS_:
 BU_: Charger RES EPOS Dashboard Datalogger_2D Datalogger Brightloop TCU SSG Xavier MCU HV_ECU SECU DCDC
 
 
+BO_ 417 EPOS_TxPDO_1: 8 Vector__XXX
+ SG_ EPOS_Torque_actual_value : 55|16@0- (1,0) [0|0] "" Vector__XXX
+ SG_ EPOS_Statusword : 7|16@0+ (1,0) [0|0] "" Vector__XXX
+ SG_ EPOS_Position_actual_value : 23|32@0- (1,0) [0|0] "" Vector__XXX
+
 BO_ 361 Acceleration_Front: 8 HV_ECU
  SG_ Acc_Front_YawRate : 48|16@1+ (0.005,-163.84) [-163.84|163.835] "" Vector__XXX
  SG_ Acc_Front_RollRate : 32|16@1+ (0.005,-163.84) [-163.84|163.835] "" Vector__XXX
