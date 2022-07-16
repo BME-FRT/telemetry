@@ -236,6 +236,47 @@
 				<Property Name="TgtF_targetfileName" Type="Str">Telemetry2022.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
+			<Item Name="Test version" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{54EC9043-150E-4122-B53F-EB440799E2AC}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{C90ACFE9-0C38-440F-871F-0BC798DCBA73}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{F4BAB7AC-E148-4F14-A8F1-C2871EA6A93D}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Test version</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">/C/Users/cupid/OneDrive/Asztali gép/FRT-Telemetria/beta</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{2E63ADB9-DF39-40E2-8E16-A05C78175EE3}</Property>
+				<Property Name="Bld_version.build" Type="Int">8</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Test.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">/C/Users/cupid/OneDrive/Asztali gép/FRT-Telemetria/beta/Test.exe</Property>
+				<Property Name="Destination[0].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">/C/Users/cupid/OneDrive/Asztali gép/FRT-Telemetria/beta/data</Property>
+				<Property Name="Destination[1].path.type" Type="Str">&lt;none&gt;</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{D2DA149B-2A12-40C1-947C-5DCA3E19B5BB}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/My Computer/Telemetry2022.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">BME Q épület</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Test version</Property>
+				<Property Name="TgtF_internalName" Type="Str">Test version</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2022 BME Q épület</Property>
+				<Property Name="TgtF_productName" Type="Str">Test version</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{6F2C1F24-596E-4E24-A746-19EFD6C39E05}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Test.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
 		</Item>
 	</Item>
 </Project>
