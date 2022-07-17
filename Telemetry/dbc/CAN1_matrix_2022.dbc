@@ -45,6 +45,7 @@ BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
  SG_ ASF_Y_Acceleration : 0|16@1+ (-0.001249794,40.9352) [-40.97004979|40.9352] "" Vector__XXX
 
 BO_ 624 Vectornav_Yaw_raw: 8 Vector__XXX
+ SG_ Bosch_yaw_rate : 23|16@0+ (0.0001,-3.2768) [-3.2768|3.2767] "" Vector__XXX
  SG_ Vectornav_yaw_rate_rear_value : 7|16@0+ (0.0001,-3.2768) [-3.2768|3.2767] "" Vector__XXX
 
 BO_ 851 Xavier_Status4: 8 Vector__XXX
@@ -69,7 +70,7 @@ BO_ 850 Xavier_Status3: 8 Vector__XXX
  SG_ Xavier_missionFinished : 1|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ Xavier_loopClosed : 0|1@1+ (1,0) [0|1] "" Vector__XXX
 
-BO_ 849 Xavier_Status2: 6 Vector__XXX
+BO_ 849 Xavier_Status2: 8 Vector__XXX
  SG_ Xavier_steeringAngleError : 40|8@1+ (0.004,-0.51) [-0.51|0.51] "" Vector__XXX
  SG_ Xavier_yawRateError : 32|8@1+ (0.2,-25.5) [-25.5|25.5] "" Vector__XXX
  SG_ Xavier_crossTrackError : 24|8@1+ (0.02,-2.55) [-2.55|2.55] "" Vector__XXX
@@ -375,6 +376,7 @@ BA_ "NodeLayerModules" BU_ Steering "CANoeILNLVector.dll";
 BA_ "NodeLayerModules" BU_ TCU "CANoeILNLVector.dll";
 BA_ "NodeLayerModules" BU_ SSG_ECU "CANoeILNLVector.dll";
 BA_ "GenMsgCycleTime" BO_ 819 100;
+BA_ "GenSigStartValue" SG_ 624 Bosch_yaw_rate 32768;
 BA_ "GenSigStartValue" SG_ 624 Vectornav_yaw_rate_rear_value 32768;
 BA_ "GenSigStartValue" SG_ 851 Xavier_orientation 127.5;
 BA_ "GenSigStartValue" SG_ 851 Xavier_position_y 2052.5;

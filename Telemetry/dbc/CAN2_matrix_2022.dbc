@@ -47,7 +47,7 @@ BO_ 361 Acceleration_Front: 8 HV_ECU
  SG_ Acc_Front_AccY : 16|16@1+ (0.0001274,-4.1746432) [-4.1746432|4.1745158] "" Vector__XXX
  SG_ Acc_Front_AccX : 0|16@1+ (0.0001274,-4.1746432) [-4.1746432|4.1745158] "" Vector__XXX
 
-BO_ 770 EPOS_MSG: 6 TCU
+BO_ 770 EPOS_MSG: 8 TCU
  SG_ EPOS_Target : 23|32@0- (1,0) [-2147483648|2147483647] "" Vector__XXX
 
 BO_ 1385 Charger_Status: 8 Charger
@@ -224,7 +224,7 @@ BO_ 530 HV_Accumulator_Status: 8 HV_ECU
  SG_ Driver_Protection_State : 23|1@0+ (1,0) [0|0] "" Vector__XXX
 
 BO_ 532 HV_Battery_Status: 8 HV_ECU
- SG_ State_of_Charge : 55|16@0+ (1,0) [0|65535] "mAh" Vector__XXX
+ SG_ State_of_Charge : 55|16@0- (1,0) [-32768|32767] "mAh" Vector__XXX
  SG_ HV_Voltage_Before_AIRs : 7|16@0+ (0.1,0) [0|6553.5] "V" Vector__XXX
  SG_ HV_Voltage_After_AIRs : 23|16@0+ (0.1,0) [0|6553.5] "V" Vector__XXX
  SG_ HV_Current : 39|16@0- (0.1,0) [-3276.8|3276.7] "A" Vector__XXX
