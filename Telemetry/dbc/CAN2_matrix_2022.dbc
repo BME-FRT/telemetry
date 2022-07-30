@@ -331,6 +331,60 @@ BO_ 912 NDCDCControl: 8 HV_ECU
  SG_ BDCDCOutput1Requested : 8|1@1+ (1,0) [0|1] ""  DCDC
  SG_ NPDBCounter : 0|8@1+ (1,0) [0|255] ""  DCDC
 
+BO_ 1298 Nonprogrammable_logic: 8 Vector__XXX
+ SG_ DV_SDC_relay_fb : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ ASMS_in : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Driving_state_active : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Watchdog : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ to_SDC_relay : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ to_EBS2_power_amplifier : 15|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ to_EBS1_power_amplifier : 14|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Shutdown_close : 13|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SDC_out : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SDC_is_ready : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SDC_in : 10|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ SDC_endline : 9|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ nSet_finish_state : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ nSet_driving_state : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ nEBS_set_active : 6|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ nEBS_is_triggered : 5|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ nBrake_engage : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EBS_is_active : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EBS2_set_active : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EBS2_feedback : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ EBS1_feedback : 0|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 1297 Pressure_values: 8 Vector__XXX
+ SG_ BP4_Hydraulic_Brake_P_Rear : 48|16@1+ (0.001,0) [0|65.535] "MPa" Vector__XXX
+ SG_ BP3_Hydraulic_Brake_P_Front : 32|16@1+ (0.001,0) [0|65.535] "MPa" Vector__XXX
+ SG_ BP2_EBS_Pressure_Rear : 16|16@1+ (0.001,0) [0|65.535] "MPa" Vector__XXX
+ SG_ BP1_EBS_Pressure_Front : 0|16@1+ (0.001,0) [0|65.535] "MPa" Vector__XXX
+
+BO_ 1282 DV_system_status: 5 Vector__XXX
+ SG_ Cones_count_all : 23|16@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Cones_count_actual : 15|8@1+ (1,0) [0|255] "" Vector__XXX
+ SG_ Lap_counter : 11|4@1+ (1,0) [1|10] "" Vector__XXX
+ SG_ Service_brake_state : 9|2@1+ (1,0) [1|3] "" Vector__XXX
+ SG_ Steering_state : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ AMI_state : 5|3@1+ (1,0) [1|6] "" Vector__XXX
+ SG_ EBS_state : 3|2@1+ (1,0) [1|3] "" Vector__XXX
+ SG_ AS_state : 0|3@1+ (1,0) [1|5] "" Vector__XXX
+
+BO_ 1281 DV_driving_dynamics_2: 6 Vector__XXX
+ SG_ Yaw_rate : 32|16@1- (0.0078125,0) [-256|255.9921875] "�/s" Vector__XXX
+ SG_ Acceleration_lateral : 16|16@1- (0.001953125,0) [-64|63.998046875] "m/s^2" Vector__XXX
+ SG_ Acceleration_longitudinal : 0|16@1- (0.001953125,0) [-64|63.998046875] "m/s^2" Vector__XXX
+
+BO_ 1280 DV_driving_dynamics_1: 8 Vector__XXX
+ SG_ Motor_moment_target : 56|8@1- (1,0) [-128|127] "%" Vector__XXX
+ SG_ Motor_moment_actual : 48|8@1- (1,0) [-128|127] "%" Vector__XXX
+ SG_ Brake_hydr_target : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Brake_hydr_actual : 32|8@1+ (1,0) [0|255] "%" Vector__XXX
+ SG_ Steering_angle_target : 24|8@1- (0.5,0) [-64|63.5] "�" Vector__XXX
+ SG_ Steering_angle_actual : 16|8@1- (0.5,0) [-64|63.5] "�" Vector__XXX
+ SG_ Speed_target : 8|8@1+ (1,0) [0|255] "km/h" Vector__XXX
+ SG_ Speed_actual : 0|8@1+ (1,0) [0|255] "km/h" Vector__XXX
+
 
 
 BA_DEF_ BO_  "GenMsgCycleTimeFast" INT 2 100000;
