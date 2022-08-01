@@ -80,11 +80,11 @@ BO_ 849 Xavier_Status2: 8 Vector__XXX
  SG_ Xavier_target_laps : 0|4@1+ (1,0) [0|15] "" Vector__XXX
 
 BO_ 617 DynamicState: 8 Vector__XXX
- SG_ Yaw_Rate_Rear : 55|16@0+ (0.0001,-3.2768) [-3.2768|3.2767] "" Vector__XXX
- SG_ v_y : 23|8@0+ (0.1,-12.8) [-12.8|12.7] "" Vector__XXX
- SG_ v_x : 7|16@0+ (0.001,0) [0|65.535] "" Vector__XXX
- SG_ AccY_Rear : 35|12@0+ (0.016,-32.768) [-32.768|32.752] "" Vector__XXX
- SG_ AccX_Rear : 31|12@0+ (0.016,-32.768) [-32.768|32.752] "" Vector__XXX
+ SG_ Yaw_Rate_Rear : 55|16@0+ (0.0001,-3.2768) [-3.2768|3.2767] "rad/s" Vector__XXX
+ SG_ v_y : 23|8@0+ (0.1,-12.8) [-12.8|12.7] "m/s" Vector__XXX
+ SG_ v_x : 7|16@0+ (0.001,0) [0|65.535] "m/s" Vector__XXX
+ SG_ AccY_Rear : 35|12@0+ (0.016,-32.768) [-32.768|32.752] "m/s2" Vector__XXX
+ SG_ AccX_Rear : 31|12@0+ (0.016,-32.768) [-32.768|32.752] "m/s2" Vector__XXX
 
 BO_ 820 SSG_Status2: 8 Vector__XXX
  SG_ sc_latch_place_of_error : 44|3@1+ (1,0) [0|7] "" Vector__XXX
