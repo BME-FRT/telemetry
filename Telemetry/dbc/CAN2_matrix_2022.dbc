@@ -36,6 +36,11 @@ BS_:
 BU_: Charger RES EPOS Dashboard Datalogger_2D Datalogger Brightloop TCU SSG Xavier MCU HV_ECU SECU DCDC FSG_Datalogger
 
 
+BO_ 1638 Laptrigger: 8 Vector__XXX
+ SG_ Laptime : 39|32@0+ (0.00125,0) [0|5368709.11875] "" Vector__XXX
+ SG_ Laps : 23|16@0+ (1,0) [0|65535] "" Vector__XXX
+ SG_ LapMeter : 7|16@0+ (1,0) [0|65535] "" Vector__XXX
+
 BO_ 417 EPOS_TxPDO_1: 8 Vector__XXX
  SG_ EPOS_Torque_actual_value : 55|16@0- (1,0) [0|0] "" Vector__XXX
  SG_ EPOS_Statusword : 7|16@0+ (1,0) [0|0] "" Vector__XXX
@@ -127,13 +132,12 @@ BO_ 1158 TCU_Status4: 8 TCU
  SG_ VDC_Efficiency_Tune : 0|8@1+ (0.01,0) [0|2.55] "" Vector__XXX
 
 BO_ 896 TCU_Status1: 8 TCU
- SG_ VDC_DV_mode : 58|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ VDC_Disable_Regbrake_F : 59|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VDC_Last_AMK_Error_Place : 57|3@1+ (1,0) [0|4] "" Vector__XXX
+ SG_ VDC_DV_mode : 60|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ VDC_Disable_Regbrake_F : 61|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VDC_btc_Error : 55|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VDC_Safety_Mode : 54|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VDC_Powerlimtier_Efficiency_On : 49|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ VDC_Yaw_Control_Braking_On : 60|1@1+ (1,0) [0|1] "" Vector__XXX
- SG_ VDC_Launch_Control_Enabled : 61|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VDC_Slip_Control_On : 62|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VDC_Traction_Control_On : 63|1@1+ (1,0) [0|1] "" Vector__XXX
  SG_ VDC_Yaw_Control_On : 48|1@1+ (1,0) [0|1] "" Vector__XXX
